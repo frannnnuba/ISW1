@@ -1,0 +1,16 @@
+1)Programming as Theory Building
+Una corriente de definicion de la programacion la clasifica como la produccion de un programa y ciertos otros textos, pero la practica demuestra que esta consideracion puede
+ser errada sobre todo en el surgimiento de errores de ejecucion y/o de reacciones, asi como en la modificacion de estos programas.
+La alternativa a esta definicion propone que la programacion es una actividad mediante la cual los programadores pueden ganar comprension o teorizar sobre los asuntos en 
+cuestion.
+THEORY BUILDING VIEW (teoria de la vista constructiva)
+Programar: la actividad de diseñar e implementar soluciones programadas. Como consecuencia esta def. incluye que el desarrollo en tiempo 
+correspondiente a los cambios que tiene lugar en la actividad de la vida real, acompañados por la ejecucion del programa (en otras palabras modificaciones del programa).
+La idea principal que quiere que nos llevemos es que programar es una actividad del mundo real y no una manipulacion de simbolos hecha por una computadora.
+En este sentido la programacion debe ser principalmente un conocimiento adquirido por el programador al que puede acceder como primera instancia, dejando cualquier
+tipo de documentacion como una erramienta auxiliar/complementaria.
+Para demostrar su punto da un ejemplo de como un grupo A desarrolla un compilador para un lenguaje y cierta computadora. Otro grupo de programadores B les compra el software,
+documentacion y los procesos de elaboracion para desarrollar un compilador para una extension del lenguaje que compila el grupo A; estan en contacto constantemente con el grupo 
+A y las soluciones a los problemas que plantea B no aprovechan la simpleza ni reusan lo maximo posible la pre-estructura de A (feedback de grupo A a B) y ellos proponen solucio-
+nes elegantes y basadas en la reutilizacion de codigo. Moraleja: el conocimiento estaba inherente al grupo A e incluso con la documentacion, programa y demas no es posible aprender
+lo mismo sobre ese programa que habiendolo desarrollado.
