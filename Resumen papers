@@ -14,3 +14,18 @@ documentacion y los procesos de elaboracion para desarrollar un compilador para 
 A y las soluciones a los problemas que plantea B no aprovechan la simpleza ni reusan lo maximo posible la pre-estructura de A (feedback de grupo A a B) y ellos proponen solucio-
 nes elegantes y basadas en la reutilizacion de codigo. Moraleja: el conocimiento estaba inherente al grupo A e incluso con la documentacion, programa y demas no es posible aprender
 lo mismo sobre ese programa que habiendolo desarrollado.
+Ej 2: se desarrola un software gigante de 200.000 lineas de texto los cuales son vendidos e instalados/debugeados por un mismo 
+equipo a lo largo de los años; esto les dio al equipo un mejor entendimiento del software que incluso dandosele la documentacion
+a otros equipos de programadores no pueden resolver o no terminan de entender como evoluciona. Moraleja: no seas raton contrata
+al que lo desarrollo.
+Ryle's Notion of Theory (la nocion de Teoria de Ryle)
+Nocion de teoria de Ryle: basicamente el conocimiento que tiene el programador debe considerarse como una teoria de conocimientos
+, tecnicas sobre el asunto en cuestion. Dicha teoria deberia poder ser explicada, justificada por el programador.
+Ryle difiere las actividades intelectaules de las inteligentes: las actividades inteligentes se caracterizan por tener reglas
+a las que se puede adherir para ser bueno en cierta actividad, pero no es estricto seguirlas para ser bueno segun un estandar al que
+la persona que desarrolla las actividades quiere seguir.
+Por otro lado las actividades intelectuales, sobrepasando la actividad intelectual, precisan de una teoria que les permita no
+solo realizar una actividad, si no tambien poder explicarla, justificarla, responder consultas; mientras construye su  teoria
+la persona trata de entenderlas tambien.
+La teoria en este contexto no puede ser considerada aislada del resto del mundo; no lacanza con enteder que una teoria
+nos da un marco especifico si no que debemos poder aplicarlo de manera amplia.
