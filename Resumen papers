@@ -56,3 +56,13 @@ En el momento de buscar la solucion optima para el problema del mundo real que s
 existente, se evidencia la necesidad del programador con su teoria y conocimiento de la solucion ya implementada y de la que se
 debe agregar de modo que sera el quien puede aportar la mejor solucion, sin necesariamente ser capaz de pasar esta vision en 
 reglas a seguir en cada ocasion.
+Plantea que no existe la modificacion de teoria como tal si no la modificacion del programa y que el programador debe estar preparado para responder/teorizar sobre
+estos cambios, si se lo mira como solo cambio de codigo se puede caer en el error de parchar el codigo ya que pueden haber muchas modificaciones para esta percepcion 
+pero si no se amoldan a la teoria no son buenas soluciones. La simplicidad y buena estructuracion deben actuar como parametro de buena calidad a la hora de teorizar.
+VIDA, MUERTE Y RESURRECCION DEL PROGRAMA (¿evangelizacion?)
+Para describir el estado de un programa se precisa hablar del grupo de programadores que lo creo: cuando nace el programa se esta teorizando sobre el, va a estar 'vivo'
+mientras este equipo que teorizo lo opere, mantenga y modifique, se dice que muere cuando ya no lo maneja el grupo que lo teorizo (aunque a fines practicos siga sirviendo)
+y puede revivir cuando un grupo vuelve a teorizar sobre el a priori para modificarlo.Despues dice que aprendes hablando con los que hicieron el programa no con su documentacion, 
+y que es mas caro tratar de revivir la teoria de un programa que permitir a un nuevo grupo hacer una nueva, incluso si se llega a formular una teoria basandose en el codigo y
+tratando de resolver los mismos problemas las diferencias serian muy grandes.
+CONSTRUCCION DE METODO Y TEORIA
