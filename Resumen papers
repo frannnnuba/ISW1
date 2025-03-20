@@ -66,3 +66,28 @@ y puede revivir cuando un grupo vuelve a teorizar sobre el a priori para modific
 y que es mas caro tratar de revivir la teoria de un programa que permitir a un nuevo grupo hacer una nueva, incluso si se llega a formular una teoria basandose en el codigo y
 tratando de resolver los mismos problemas las diferencias serian muy grandes.
 CONSTRUCCION DE METODO Y TEORIA
+Define un metodo como las reglas para los programadores, diciendoles que deberia hacer, en que orden, notaciones o lenguajes a usar, y que documentacion producir en que etapa.
+Un metodo implica el desarrollo de codigo como algo que puede/debe ser separado en partes, como una serie de pasos; esto va en contra de la TBV ya que una teoria no se puede 
+separar en etapas.Lo mismo aplica para el resto de conceptos que abarca metodos.
+En la TBV no hay metodos correctos para el desarrollo de software, lo defiende de dos ataques:
+1) Se deberia tratar a la programacion como tema de ciencia y por lo tanto usar metodos cientificos. 
+   Defensa: asumir que hay un metodo cientifico y que seguirlo ayuda a los cientificos es errado.
+2) Seguimiento de metodos usados exitosamente siendo publicado.
+   No hay estudios que demuestren que seguir un metodo X lleve al exito. Lo que queda aprendido de haber usado un metodo forma al prgramador y esto es valido para la teoria,
+   pero no es el valor deel metodo como tal ya que no todos se adaptan siempre.
+ESTATUS DEL PROGRAMADOR Y LA TBV 
+Hace enfasis en la diferencia entre la percepcion general sobre los programadores (sus mentes actuan como maquinas entonces deben ser tratados como tales y esperarse que 
+respondan como una computadora, siguiendo reglas y siendo facilmente reemplazables), en un estudio de Oskarsson de 1982 sobre un sistema, incluso hablando solamente de lo tecnico
+del sistema que habian vendido, se deja entre ver de manera aislada que en realidad los programadores siguen estando atras de cada decision.
+En cambio la TBV ve a los programadores como los que teorizan y que son la verdadera solucion de problemas y no solo software(mas de lo mismo de antes).
+CONCLUSIONES DEL TEXTO
+Para adaptar el codigo a cambios que puedan surgir hay que teorizar sobre los temas a tratar/resolver de la vida real, de tal modo que el codigo pueda ejecutarlos.
+Para mantener la vida util del codigo hay que tener el equipo que teorizo para crearlo.
+La idea de metodos de programacion es errada y debe evitarse pues viene de ideas erradas.
+El programador no debe ser tratado como algo expendible y reemplazable, si no darle su importancia pues su formacion no se basa solo en saber notaciones o lenguajes de programacion
+si no en como teorizar y tener un acercamiento mas correcto a los temas a resolver
+MIS CONLUSIONES
+mucho texto.
+El texto toca temas centrales: TBV, nocion de Ryle sobre la teoria, modificacion del programa,metodos,vida util de los programas,trato de los programadores.
+En general apunta a que importa la teorizacion antes de cualquier otra cosa, lo que es un aspecto propio del programador y nadie mas puede tener si no teoriza
+por si mismo.
