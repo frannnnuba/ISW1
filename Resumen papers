@@ -99,3 +99,27 @@ que uno le daria, interpretado por el usuario por estas señales(analogia puerta
 La visibilidad del diseño debe ser la justa: si hay de menos el usuario no va a saber donde encontrar lass funciones, y si hay de mas el usuario se abruma y no sabe utilizarlo.
 Prestación en psicologia de materiales refiere en este sentido a las propiedades percibidas y efectivas del objeto.
 Evitar sistemas y diseños que puedan a llegar a causar efectos por casualidad que se tomen como causalidad.
+Modelos conceptuales: al ver los componentes y los elementos que sean visibles, se infiere su uso y la relacion de estos componentes en los resultados que tendra utilizar
+el objeto. PRestaciones: lo que esta para usarse ; Restricciones: es el como deben ser usadas los elementos visibles para usar las  prestaciones.
+principios fundamentales del diseño para la gente: 1) aportar un buen modelo conceptual, y 2) hacer que las cosas sean visibles. 
+A) Aportar un buen modelo conceptual:
+Un buen modelo conceptual nos permite predecir los efectos de nuestros actos. necesitamos comprender la relación entre los mandos y los resultados.
+Modelo de diseño: es inherente a quien diseño el objeto.
+Modelo de usuario: construccion mental del usuario respecto de como utilizar el objeto basada en la interaccion con este y posible documentacion.
+Imagen del sistema: es la estructura fisica (documentacion,instrucciones,etiquetas). Es la encargada de que el usuario pueda llegar a tener el mismo modelo que el del diseñador.
+Un sistema comprensible deberia ser visible, la topografia es buena, relacion entre los mandos y lo que controlan es natural, los mandos son unicos y suelen tener buena retroalimentaicon.
+TOPOGRAFIA: relacion entre dos cosas; en el contexto de este paper es la relacion entre los mandos, sus desplazamientos y sus resultados.
+Para el diseño sirve sobre todo la nocion de topografia natural (cultural o biologica): poder establecer un orden de mas o menos a lo que simulamos, mas brillo, menos bateria,
+etc. mientras que otras topografias pueden ser sutituvas, donde se cambia un valor por otro y asi.
+La relacion de mando -- resultado/funcion debe tratarse de ser uno a uno y no sobrecargar un mando a varios posibles resultados; luego si estos mandos son autodescriptibles 
+aprovechando la topografia(imagenes,visuales) se resultara mas facil utilizarlos.
+PRINCIPIO DE RETROALIMENTACION: envío de vuelta al usuario de información acerca de qué acto se ha realizado efectivamente y qué resultado se ha logrado.
+paradoja de la tecnología: por lo general, una mayor capacidad funcional se ha de pagar con una mayor complejidad. 
+Existe una correlacion entre los costes y utilidad: si se quiere mayor utilidad habra mayor coste; si cuesta menos habra menor utilidad lo que puede complicar el uso.
+Un buen diseño deberia poder adaptarse a las exigencias del fabricante, vendedor, usuario y mantinimiento. Si a los 3 intentos no se establece bien el publico suele rechazar
+el producto tratandolo de fallido, pero generalmente se necesita de al menos hasta 6 intentos para conseguir un lanzamiento viable.
+PARADOJA DE LA TECNOLOGIA: se ve como un grafico tipo U, un diseño puede arrancar siendo complicado y dificil de entender por los usuarios, luego la dificultad baja
+y parece estabilizarse temporalmente, el problema resurje cuando se le quiere agregar mas funcionalidad/potencia a los modelos ya funcionales, a costo de complejizar el
+modo de usar los mandos y volver a un sistema incomprensible por el usuario (ejemplos relojes -> relojes digitales, radio viejas -> radios simples -> radios reproductoras etc).
+La paradoja de la tecnologia no debe usarse para justificar un mal diseño: la paradoja de la tecnologia se da desde un modelo que pudo arrancar mal y mejoro y volvio a empeorar
+a cause de los agregados; mientras que si un modelo estaba mal concevido desde un inicio no fue victima de la paradoja.
