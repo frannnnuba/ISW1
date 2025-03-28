@@ -18,3 +18,4 @@ La forma de saber si un objeto pertenece a la esencia del ente del dominio es cu
 entonces no formaba parte de la esencia.
 Colaboracion: hecho de que un objeto le envie un msj a otro. Cuando el receptor recibe un msj buca el metodo asociado (si lo encuentr) y devuelve un resultado. Caracc: dirigidas, sincronicas(no puede hacer nada mas mientras espera respuesta), siempre hay respuesta, el receptor desconoce el emisor.
 Colaboracion sintaxis: objeto receptor mensaje (el emisor no se escribe nunca).
+CreateChildOf: te permite no copiar codigo si no que un objeto va a servir de prototipo, el codigo va a estar en el prototipo. 
