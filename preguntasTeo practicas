@@ -1,5 +1,7 @@
-Guia 1.2 Ej 2.1
+Guia 1.2
+Ej 2.1
 Definicion de bloques del libro Smalltalk the language ans implementations : Secuencia diferida(aplazada,distinguida) de acciones
  ¿Que valor regresa un block luego de value?
  Regresa el objeto resultado de la ultima expresion ejecutada. Si el bloque es vacio o no tiene expresiones devuelve nil.
- 
+ Ej 3.1 ¿Definicion de simbolos?
+Los simbolos son objetos que representan el string de los nombres de los objetos, por lo tanto son unicos. Empiezan con # y son seguidos de una cadena alfanumerica.
