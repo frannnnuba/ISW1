@@ -1,0 +1,5 @@
+Guia 1.2 Ej 2.1
+Definicion de bloques del libro Smalltalk the language ans implementations : Secuencia diferida(aplazada,distinguida) de acciones
+ ¿Que valor regresa un block luego de value?
+ Regresa el objeto resultado de la ultima expresion ejecutada. Si el bloque es vacio o no tiene expresiones devuelve nil.
+ 
