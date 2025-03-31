@@ -123,3 +123,31 @@ y parece estabilizarse temporalmente, el problema resurje cuando se le quiere ag
 modo de usar los mandos y volver a un sistema incomprensible por el usuario (ejemplos relojes -> relojes digitales, radio viejas -> radios simples -> radios reproductoras etc).
 La paradoja de la tecnologia no debe usarse para justificar un mal diseño: la paradoja de la tecnologia se da desde un modelo que pudo arrancar mal y mejoro y volvio a empeorar
 a cause de los agregados; mientras que si un modelo estaba mal concevido desde un inicio no fue victima de la paradoja.
+PAPER 3 NO SILVER BULLET
+Habla sobre como no se puede comparar la revolucion que fueron los transistores etc en el hardware (brindando confiabilidad,simplicidad,productividad) a la produccion de software
+Para hablar de las dificultades esperables en el desarrollo de software, las divide en esencia y accidentes.
+Problemas de esencia: son aquellos inherentes a la naturaleza del software.
+Considera que la dificultad de los problemas de esencia son la especificacion,diseño y testeo de la estructura conceptual del software y no de una representacion de esta.PAra
+hablar de esto dice que hay 4 propiedades inherentes a la esencia del software:
+1) Complejidad: la complejidad se entiende por la cantidad de elementos del software, como interactuan entre si, su "tamaño"y su naturaleza. Luego el querer abstraer un problema de su
+complejidad no sirve para el desarrollo de software como puede servir para otras ciencias, pues en si esta la esencia del problema; de la complejidad viene el problema
+de enumerar los distintos estados del programa y por ende su poca fiabilidad
+2)Ajustabilidad: la complejidad viene dada tambien en cierto modo por lo reciente del software, en algunos casos debe conformarse por ser lo mas reciente en aparecer
+en escena mientras que otras veces debe conformarse por ser el mas conformable. No hay una manera que el software pueda ajustarse a todo de manera integral pues cada estruc.
+de software se ajusta a interfaces reales.
+3)Posibilidad de cambio: el software es producto constante de cambio pues encarna su funcionalidad; el problema es que la funcionalidad es sujeto de cambio continuo ya sea 
+por querer agregarsele funciones, o porque el 'vehiculo' del software cambia(pcs,discos,impresoras etc).
+4)Invisibilidad: el software carece de una representacion grafica que facilite su comprension, deteccion de errores etc si bien se puede intentar con grafos dirigidos demas
+no se suele conseguir la idea de abstraccion geometrica, por ende el software permanece inrepresentable privandonos de visualizar alguna de sus herramientas mas poderosas.
+Menciona 3 casos que mejoraron las dificultades accidentales mas no las esenciales: lenguajes de alto nivel, time-sharing, enviroments compartidos de programacion.
+Menciona la programacion orientada a objetos desde 2 enfoques: abstraccion de estructuras de datos y la otra tipos de jerarquia. Ambos enfoques permiten sacar dificultades de 
+accidente mas no atacan el problema de esencia.
+Menciona la IA desde dos enfoques: AI-1: uso de computadoras para resolucion de problemas previamente solo resolvibles por humanos y AI-2: uso de heuristicas programacion
+basada en reglas.
+AI-1: el problema de construir software no proviene de como decir las cosas si no que decir.Ademas dice que la programacion tiene algo imaginativo inherente a los humanos.
+AI-2(Expert Systems): IA usada para la construccion de sistemas expertos; los sistemas expertos son un programa con un motor de inferencia generalizado y una base de reglas,
+Los motores de inferencia proveen soluciones a algoritmos independientes de aplicacion y luego son aplicadas de manera especifica; la parte mutable de cada aplicacion
+especifica esta embebida en la base de reglas, la cual aporta herramientas para modificacion, testeo etc de la propia aplicacion. EL autor sugiere que la mayor ventaja de 
+los motores de inferencia no son de la resolucion especifica del problema si no de la complejidad de la aplicacion particular.
+
+Problemas de accidente: problemas que afectan al desarrolo actual pero no son inherentes a la naturaleza del software.
