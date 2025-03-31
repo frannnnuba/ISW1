@@ -123,6 +123,7 @@ y parece estabilizarse temporalmente, el problema resurje cuando se le quiere ag
 modo de usar los mandos y volver a un sistema incomprensible por el usuario (ejemplos relojes -> relojes digitales, radio viejas -> radios simples -> radios reproductoras etc).
 La paradoja de la tecnologia no debe usarse para justificar un mal diseño: la paradoja de la tecnologia se da desde un modelo que pudo arrancar mal y mejoro y volvio a empeorar
 a cause de los agregados; mientras que si un modelo estaba mal concevido desde un inicio no fue victima de la paradoja.
+
 PAPER 3 NO SILVER BULLET
 Habla sobre como no se puede comparar la revolucion que fueron los transistores etc en el hardware (brindando confiabilidad,simplicidad,productividad) a la produccion de software
 Para hablar de las dificultades esperables en el desarrollo de software, las divide en esencia y accidentes.
@@ -149,5 +150,17 @@ AI-2(Expert Systems): IA usada para la construccion de sistemas expertos; los si
 Los motores de inferencia proveen soluciones a algoritmos independientes de aplicacion y luego son aplicadas de manera especifica; la parte mutable de cada aplicacion
 especifica esta embebida en la base de reglas, la cual aporta herramientas para modificacion, testeo etc de la propia aplicacion. EL autor sugiere que la mayor ventaja de 
 los motores de inferencia no son de la resolucion especifica del problema si no de la complejidad de la aplicacion particular.
-
+Criticas: para generar un sistema experto necesita de un experto del cual aprender y esto puede ser costoso; y que lo que se especifica para estos sistemas no es el problema
+si no el como resolver el problema, lo cual necesita de alguien que entienda el problema.Sugiere que pueden servir para ayudar a programadores novatos a adquirir tecnicas.
+Programacion visual: no sirve de nada realizar un esquema de control de flujo despues de haber hecho el programa, segundo menciona que las pantallas eran muy chicas para
+mostrar el alcance de cualquier diagrama de software complejo(esto no aplica a hoy en dia? El texto es de 1986)
 Problemas de accidente: problemas que afectan al desarrolo actual pero no son inherentes a la naturaleza del software.
+Verificacion de programas: plantea la idea de chequear los programas antes de implementarlos; inmediatamente la rechaza pues no implica una mejora significativa, no implica
+que el codigo no vaya a tener errores y no mejora el enfoque de como resolver la esencia .
+Environments and tools: desprecia las ides diciendo que no aportarian mas que correctitud sintactica y semantica a menor medida. sugiere una base de datos compartida donde 
+se detallen percepciones y detalles de los porgramadores para poder ser consultadas y recordadas inmediatamente.
+Estaciones de trabajo: mejoras de computo son bienvenidas pero no atacan el problema princ.
+Comprar VS Construir: poner en consideracion el costo de comprar software vs construirlo. Aunque inicalmente pueda parece mucho puede ser mas barato y eficiente que construir 
+de cero.
+Refinamiento de prerequisitos y prototipado rapido: especificar el software tiene que ser la parte mas importante que haga un diseñador de software
+Problemas accidentales: aquellos no inherentes a la esencia del software.
