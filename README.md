@@ -19,3 +19,11 @@ entonces no formaba parte de la esencia.
 Colaboracion: hecho de que un objeto le envie un msj a otro. Cuando el receptor recibe un msj buca el metodo asociado (si lo encuentr) y devuelve un resultado. Caracc: dirigidas, sincronicas(no puede hacer nada mas mientras espera respuesta), siempre hay respuesta, el receptor desconoce el emisor.
 Colaboracion sintaxis: objeto receptor mensaje (el emisor no se escribe nunca).
 CreateChildOf: te permite no copiar codigo si no que un objeto va a servir de prototipo, el codigo va a estar en el prototipo. 
+Notas clase 4:
+¿codigo fuente vs codigo?
+En smalltalk no es solo texto es codigo.
+Refactory automatizado: son modificar las herramientas del ambiente para cambiar el codigo fuente (cambiar nombres,cambiar referencias, implementadores)
+Senders: lugares donde se envia el mensaje.
+Implementor: donde se implementa el mensaje.
+Cohesion medida de representacion del objeto con un ente real.
+alta cohesion bajo acoplamiento (goal).
