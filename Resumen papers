@@ -162,5 +162,10 @@ se detallen percepciones y detalles de los porgramadores para poder ser consulta
 Estaciones de trabajo: mejoras de computo son bienvenidas pero no atacan el problema princ.
 Comprar VS Construir: poner en consideracion el costo de comprar software vs construirlo. Aunque inicalmente pueda parece mucho puede ser mas barato y eficiente que construir 
 de cero.
-Refinamiento de prerequisitos y prototipado rapido: especificar el software tiene que ser la parte mas importante que haga un diseñador de software
+Refinamiento de prerequisitos y prototipado rapido: especificar el software tiene que ser la parte mas importante que haga un diseñador de software. La mayor forma de atacar
+los problemas de esencia es el desarrollo de herramientas que permitan iterar sobre los prerequisitos de la especificacion para poder construir prototipos del software
+para poder ser testeado por el usuario antes de ponerse a hacer casos borde etc.
+Construccion vs "Crecimiento" de software: no le gusta que digan construccion de software. Dice que el poner un sistema, por precario que sea, en funcionamiento permite ver
+resultados, desde ahi mejorarlo y dar detalles(top-down).
+
 Problemas accidentales: aquellos no inherentes a la esencia del software.
