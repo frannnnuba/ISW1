@@ -167,5 +167,11 @@ los problemas de esencia es el desarrollo de herramientas que permitan iterar so
 para poder ser testeado por el usuario antes de ponerse a hacer casos borde etc.
 Construccion vs "Crecimiento" de software: no le gusta que digan construccion de software. Dice que el poner un sistema, por precario que sea, en funcionamiento permite ver
 resultados, desde ahi mejorarlo y dar detalles(top-down).
-
 Problemas accidentales: aquellos no inherentes a la esencia del software.
+
+PAPER 4 SELF
+Es un lenguaje orientado a objetos pero prototipado, no hay variables ni clases ni instancias,todo son objetos y mensajes que se saben responder.
+Plantea que los sistemas de prototipado no tienen clases pues los objetos tienen caracs propias y basarse en un modelo a 'instanciar' le saca propiedades unicas intrinsecas
+a cada objeto; los prototipos simplemente permiten copiar comportamiento y dejan lugar para cada mensaje poder ser customizado.
+Para que todos los objetos sean iguales, incluso el prototipo que presenta el comportamiento, tienen un 'padre' que es el que tiene estas caracteristicas en comun y actua
+como suerte de clase.Dice que el tener variables en vez de 'slots' que se autoresponden le quita peso a los mensajes y se diluye el concepto de POO.
