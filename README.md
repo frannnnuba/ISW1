@@ -27,3 +27,9 @@ Senders: lugares donde se envia el mensaje.
 Implementor: donde se implementa el mensaje.
 Cohesion medida de representacion del objeto con un ente real.
 alta cohesion bajo acoplamiento (goal).
+
+Idea sacarIfs 1.4: tiene 5 colaboradores de instancia: state, type,speed,altitude,engineType, where.
+Lo que queremos es abstraer objetos de la realidad en objetos computables QUE SE COMPORTAN COMO.
+Si inicializo un vehiculo apagado, lo prendo y despues lo apago no quiero que me cambie el auto 3 veces, quiero que el estado del motor de ESE auto se cambie a lo que corresponde, luego es el motor quien debe COMPORTARSE COMO el tipo que sea (apagado/prendido).Aca quiero saber quien es el vehiculo cuyo estado es la instancia asi que sera un colaborador interno de instancia.
+Luego tenemos el motor de ESE auto, los motores se pueden subclasificar en base a que consumen para andar, y deben poder conocer su estado (prendido/apagado), no les importa ni la velocidad ni el tipo de vehiculo ni la altura ni en donde se mueve. Su colaborador interno sera con power status. ese auto deberia ser capaz de saber que tipo de motor tiene, mas no la vuelta.
+El where viene dado por el tipo de motor aparentemente
