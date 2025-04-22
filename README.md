@@ -34,7 +34,7 @@ Si inicializo un vehiculo apagado, lo prendo y despues lo apago no quiero que me
 Luego tenemos el motor de ESE auto, los motores se pueden subclasificar en base a que consumen para andar, y deben poder conocer su estado (prendido/apagado), no les importa ni la velocidad ni el tipo de vehiculo ni la altura ni en donde se mueve. Su colaborador interno sera con power status. ese auto deberia ser capaz de saber que tipo de motor tiene, mas no la vuelta.
 El where viene dado por el tipo de motor aparentemente y no tiene que ser simetrica la relacion.
 por lo visto ademas hay codigo repetido en los tests, en principio abstraerlo a nuevos mensajes.
-
 IDIOM: expresiones idiomaticas bien conocidas
 Evitar modelos redundantes: si se puede calcular con recursion de los objetos algo que me estaba guardando con una variable es redundante y no quieren en la materia.
 Por ej en el stack no guardar el size si no hacer que lo calcule desde el top y cuando llega a la base suma 0.
+No diseñar por querer hacer repeticiones tempranas (el size se obtiene en O(1) pero quizas se usa una sola vez versus cada vez que hago un push pop etc hacer mil sumas restas etc)
