@@ -38,3 +38,7 @@ IDIOM: expresiones idiomaticas bien conocidas
 Evitar modelos redundantes: si se puede calcular con recursion de los objetos algo que me estaba guardando con una variable es redundante y no quieren en la materia.
 Por ej en el stack no guardar el size si no hacer que lo calcule desde el top y cuando llega a la base suma 0.
 No diseñar por querer hacer repeticiones tempranas (el size se obtiene en O(1) pero quizas se usa una sola vez versus cada vez que hago un push pop etc hacer mil sumas restas etc)
+1) Modelar en especifico para un sentence finder para un prefix especifico, un one time only. Esto es clausurarlo, si se hace particular es mas facil que querer hacerlo generico
+Method object: sirve para modelar metodos con objetos (quiero sacar un metodo fuera de lo que podria llegar a estar dentro del objeto y muy probablemente va a usar
+variables locales como colaboradores internos para no tener que andar pasandolos como parametros constantemente y son esenciales al metodo pues se desprende del objeto).
+
