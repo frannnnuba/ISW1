@@ -41,4 +41,17 @@ No diseñar por querer hacer repeticiones tempranas (el size se obtiene en O(1) 
 1) Modelar en especifico para un sentence finder para un prefix especifico, un one time only. Esto es clausurarlo, si se hace particular es mas facil que querer hacerlo generico
 Method object: sirve para modelar metodos con objetos (quiero sacar un metodo fuera de lo que podria llegar a estar dentro del objeto y muy probablemente va a usar
 variables locales como colaboradores internos para no tener que andar pasandolos como parametros constantemente y son esenciales al metodo pues se desprende del objeto).
-
+fijarse como escribir los if para ver el orden en que los vamos a sacar despues tenga sentido (en el de los penales si se arrancaba con el arquero despues delantero despues
+pelota no seria tan intuitivo, se puede igual pero cuesta)
+lo que cambia es la condicion, lo que hay que chequear.
+como parametrizar valores que usa la funcion mientras que en otra cambia la funcion
+parametrizar el como se hacen las cosas se hace con closure. Si lo que cambia es el como es una cosa(closure), y otras son los parametros(numeros etc)
+meter chequeos en asserts (assert direccion etc) lo hace mas declarativo (separar el que del como)
+arqueroCoordenadasCorrectas y fuerza suficiente, closures que chequean las condiciones.
+la forma ahora de como estan escritos nos permite sacar los if de manera mucho mas facil a como estaban antes.
+jerarquia polimorfica estrategiadetiro subclasifica aMatar y aColocar que sepa  responder el mensaje m, el arquero tiene que tener un mensaje que le mande a la jerarquia y sepa responder, si desde penales quisiera obtener la estrategia para mandarle msj rompe encapsulamiento.
+en este caso los setters son las variables temporales, en la mayoria de casos esta mal, pero como es un method object que hacia eso originalmente no esta mal ni esta rompiendo encapsulamiento.
+cadena de que con cada objeto encapsula el como
+jerarquia atajada
+si no se quiere  un method object se tiene que tener muchos metodos con parametros donde se defina con lo que se cambio desde la instancia mas baja (o un closure quizas etc)
+el que introdujo el tema a el problema tiene que tenerlo luego de sacar los if etc.
