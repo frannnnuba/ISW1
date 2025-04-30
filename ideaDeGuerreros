@@ -1,0 +1,21 @@
+aventureros tienen un tipo: aventurero o mago (pueden haber mas a futuro)
+guerrero: empiezan con 4 de fuerza, 10 puntos de vida
+mago: empiezan con 2 de fuerza,15 puntos de vida
+items:
+
+items de ataques: equipar a un aventurero con un item de ataque que no es el suyo tiene una penalizacion
+espadas: solo pueden atacar a una instancia de monstruo,  no pueden atacarlos si su altura es menor a 1m , el daño que hacen es la fuerza del aventurero.
+Penalizacion de la espada: quita todos los puntos de vida
+baculos: matan a los goblins de una, al resto de monstruos les quita la fuerza del aventurero.
+Penalizacion: si el que lo usa no es un mago a los goblins les duplica la vida, al resto de monstruos les hace el daño correspondiente.
+
+ITEMS DE DEFENSA: 
+armadura: 5pts de vida ;escudo magico: 3 pts de vida. NO PENALIZA
+MONSTRUOS: 
+GOBLIN: altura 90cm PV 5
+OGRO: altura 220cm pv 15
+
+ATAQUES: 
+De aventurero a monstruo
+De monstruo a aventurero : le quita el max (0, pv del monstruo - defensas del aventurero).
+
