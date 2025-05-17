@@ -1,0 +1,598 @@
+
+
+----STARTUP---- (16 May 2025 20:24:16) as /home/Estudiante/Escritorio/linux64(1) 1/linux64/CuisUniversity-6350.image!
+
+
+Object subclass: #MarsRover
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: ''!
+
+!classDefinition: #MarsRover category: #'as yet unclassified' stamp: 'fs 5/16/2025 20:28:32'!
+Object subclass: #MarsRover
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'as yet unclassified'!
+
+Object subclass: #MarsRoverTests
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'as yet unclassified'!
+
+!classDefinition: #MarsRoverTests category: #'as yet unclassified' stamp: 'fs 5/16/2025 20:29:43'!
+Object subclass: #MarsRoverTests
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'as yet unclassified'!
+!MarsRoverTests methodsFor: 'nil' stamp: 'fs 5/16/2025 20:35:41'!
+test01ArrancaEnUnLugarFijo
+           |unRover|
+           unRover := MarsRover new withInitialCoordinates: (0@0).
+           self assert: (unRover itsPosition) = (0@0). ! !
+!MarsRoverTests methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 20:36:43'!
+Test01ArrancaEnUnLugarFijo          
+           |unRover|
+           unRover := MarsRover new withInitialCoordinates: (0@0).
+           self assert: (unRover itsPosition) = (0@0). ! !
+
+!methodRemoval: MarsRoverTests #test01ArrancaEnUnLugarFijo stamp: 'fs 5/16/2025 20:37:05'!
+test01ArrancaEnUnLugarFijo
+           |unRover|
+           unRover := MarsRover new withInitialCoordinates: (0@0).
+           self assert: (unRover itsPosition) = (0@0). !
+!MarsRover class methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 20:38:16'!
+withInitialCoordinates: aCoordinate
+                           ! !
+!MarsRoverTests methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 20:38:27' prior: 50539308!
+Test01ArrancaEnUnLugarFijo          
+           |unRover|
+           unRover := MarsRover new withInitialCoordinates: (0@0).
+           self assert: (unRover itsPosition) equals: (0@0). ! !
+!MarsRoverTests methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 20:38:56'!
+test01ArrancaEnUnLugarFijo          
+           |unRover|
+           unRover := MarsRover new withInitialCoordinates: (0@0).
+           self assert: (unRover itsPosition) equals: (0@0). ! !
+
+!methodRemoval: MarsRoverTests #Test01ArrancaEnUnLugarFijo stamp: 'fs 5/16/2025 20:38:56'!
+Test01ArrancaEnUnLugarFijo          
+           |unRover|
+           unRover := MarsRover new withInitialCoordinates: (0@0).
+           self assert: (unRover itsPosition) equals: (0@0). !
+!MarsRover class methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 20:39:48' prior: 50539325!
+withInitialCoordinates: aCoordinate
+                           self new initializeWithCoordinates: aCoordinate.! !
+!MarsRover class methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 20:40:09' prior: 50539358!
+withInitialCoordinates: aCoordinate
+                           ^self new initializeWithCoordinates: aCoordinate.! !
+
+!classDefinition: #MarsRover category: #'as yet unclassified' stamp: 'fs 5/16/2025 20:40:38'!
+Object subclass: #MarsRover
+	instanceVariableNames: 'coordinate'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'as yet unclassified'!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 20:40:36'!
+initializeWithCoordinates: aCoordinate
+                        coordinate:= aCoordinate.! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 20:41:19'!
+itsPosition 
+              ^coordinate! !
+!MarsRoverTests methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 20:44:47' prior: 50539340!
+test01ArrancaEnUnLugarFijo          
+           |unRover|
+           unRover := MarsRover new withInitialCoordinates: (0@0).
+           self assert: (unRover doesntMove)itsPosition equals: (0@0). ! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 20:45:13'!
+doesntMove
+               ! !
+
+!methodRemoval: MarsRover #doesntMove stamp: 'fs 5/16/2025 20:45:20'!
+doesntMove
+               !
+!MarsRoverTests methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 20:46:29' prior: 50539390!
+test01ArrancaEnUnLugarFijo          
+           |unRover|
+           unRover := MarsRover new withInitialCoordinates: (0@0).
+           self assert: (unRover )itsPosition equals: (0@0). ! !
+!MarsRoverTests methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 20:48:36'!
+test01nullMovementDoesntAffectRover          
+           |unRover|
+           unRover := MarsRover new withInitialCoordinates: (0@0).
+           self assert: (unRover )itsPosition equals: (0@0). ! !
+
+!methodRemoval: MarsRoverTests #test01ArrancaEnUnLugarFijo stamp: 'fs 5/16/2025 20:48:36'!
+test01ArrancaEnUnLugarFijo          
+           |unRover|
+           unRover := MarsRover new withInitialCoordinates: (0@0).
+           self assert: (unRover )itsPosition equals: (0@0). !
+!MarsRoverTests methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 20:48:57' prior: 50539416!
+test01nullMovementDoesntAffectRover          
+           |unRover|
+           unRover := MarsRover new withInitialCoordinates: (0@0) facing: 'North'.
+           self assert: (unRover )itsPosition equals: (0@0). ! !
+!MarsRover class methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 20:50:28'!
+withInitialCoordinates: aCoordinate facing: aCardinal
+                           ^self new initializeWithCoordinates: aCoordinate.! !
+!MarsRover class methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 20:50:48' prior: 50539445!
+withInitialCoordinates: aCoordinate facing: aCardinal
+                           ^self new initializeWithCoordinates: aCoordinate andFacing: aCardinal.! !
+
+!methodRemoval: MarsRover class #withInitialCoordinates: stamp: 'fs 5/16/2025 20:50:56'!
+withInitialCoordinates: aCoordinate
+                           ^self new initializeWithCoordinates: aCoordinate.!
+
+!classDefinition: #MarsRover category: #'as yet unclassified' stamp: 'fs 5/16/2025 20:51:35'!
+Object subclass: #MarsRover
+	instanceVariableNames: 'coordinate direction'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'as yet unclassified'!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 20:51:34'!
+initializeWithCoordinates: aCoordinate andFacing: aCardinal
+                        coordinate:= aCoordinate.
+                        direction:= aCardinal .! !
+
+TestCase subclass: #MarsRoverTests
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'as yet unclassified'!
+
+!classDefinition: #MarsRoverTests category: #'as yet unclassified' stamp: 'fs 5/16/2025 20:52:15'!
+TestCase subclass: #MarsRoverTests
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'as yet unclassified'!
+
+!testRun: #MarsRoverTests #test01nullMovementDoesntAffectRover stamp: 'fs 5/16/2025 20:52:17'!
+ERROR!
+
+!testRun: #MarsRoverTests #test01nullMovementDoesntAffectRover stamp: 'fs 5/16/2025 20:52:17'!
+ERROR!
+!MarsRoverTests methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 20:53:31' prior: 50539435!
+test01nullMovementDoesntAffectRover          
+           |unRover|
+           unRover := MarsRover new withInitialCoordinates: (0@0) facing: 'North'.
+           self assert: (unRover )itsPosition equals: (0@0).
+           self assert: (unRover)itsFacing equals: 'North'. ! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 20:53:50'!
+itsFacing
+                ! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 20:54:01' prior: 50539507!
+itsFacing
+                ^direction ! !
+
+!testRun: #MarsRoverTests #test01nullMovementDoesntAffectRover stamp: 'fs 5/16/2025 20:54:04'!
+ERROR!
+
+!testRun: #MarsRoverTests #test01nullMovementDoesntAffectRover stamp: 'fs 5/16/2025 20:54:04'!
+ERROR!
+!MarsRoverTests methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 20:54:41' prior: 50539496!
+test01nullMovementDoesntAffectRover          
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           self assert: (unRover )itsPosition equals: (0@0).
+           self assert: (unRover)itsFacing equals: 'North'. ! !
+
+!methodRemoval: MarsRover #initializeWithCoordinates: stamp: 'fs 5/16/2025 20:55:17'!
+initializeWithCoordinates: aCoordinate
+                        coordinate:= aCoordinate.!
+!MarsRoverTests methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 20:56:46' prior: 50539516!
+test01nullMovementDoesntAffectRover          
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           self assert: (unRover itsPosition) equals: (0@0).
+           self assert: (unRover)itsFacing equals: 'North'. ! !
+!MarsRoverTests methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 20:57:15' prior: 50539534!
+test01nullMovementDoesntAffectRover          
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           self assert: (unRover itsPosition) equals: (0@0).
+           self assert: (unRover itsFacing) equals: 'North'. ! !
+
+!testRun: #MarsRoverTests #test01nullMovementDoesntAffectRover stamp: 'fs 5/16/2025 20:57:27'!
+PASSED!
+!MarsRoverTests methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 20:59:28'!
+test02MoveUpFacingNorth         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover forward.
+           self assert: (unRover itsPosition) equals: (0@0).
+           self assert: (unRover itsFacing) equals: 'North'. ! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 20:59:39'!
+forward
+	self shouldBeImplemented.! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 21:00:10' prior: 50539570!
+forward
+	coordinate := coordinate + (0@1).! !
+!MarsRoverTests methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 21:00:33' prior: 50539558!
+test02MoveUpFacingNorth         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover forward.
+           self assert: (unRover itsPosition) equals: (0@1).
+           self assert: (unRover itsFacing) equals: 'North'. ! !
+!MarsRoverTests methodsFor: 'testing' stamp: 'fs 5/16/2025 21:02:12'!
+test02MoveDownFacingNorth         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover backward.
+           self assert: (unRover itsPosition) equals: (0@1).
+           self assert: (unRover itsFacing) equals: 'North'. ! !
+!MarsRoverTests methodsFor: 'testing' stamp: 'fs 5/16/2025 21:02:24' prior: 50539592!
+test02MoveDownFacingNorth         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover backward.
+           self assert: (unRover itsPosition) equals: (0@-1).
+           self assert: (unRover itsFacing) equals: 'North'. ! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 21:02:35'!
+backward
+	self shouldBeImplemented.! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 21:04:17' prior: 50539616!
+backward
+	coordinate := coordinate + (0@-1).! !
+!MarsRoverTests methodsFor: 'testing' stamp: 'fs 5/16/2025 21:05:19'!
+test03MoveDownFacingNorth         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover backward.
+           self assert: (unRover itsPosition) equals: (0@-1).
+           self assert: (unRover itsFacing) equals: 'North'. ! !
+
+!methodRemoval: MarsRoverTests #test02MoveDownFacingNorth stamp: 'fs 5/16/2025 21:05:19'!
+test02MoveDownFacingNorth         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover backward.
+           self assert: (unRover itsPosition) equals: (0@-1).
+           self assert: (unRover itsFacing) equals: 'North'. !
+!MarsRoverTests methodsFor: 'testing' stamp: 'fs 5/16/2025 21:05:55'!
+test04MoveDownFacingNorth         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover right.
+           self assert: (unRover itsPosition) equals: (0@0).
+           self assert: (unRover itsFacing) equals: 'East'. ! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 21:06:38'!
+right
+	self shouldBeImplemented.! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 21:07:09' prior: 50539661!
+right
+		direction := 'East'! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 21:07:11' prior: 50539666!
+right
+		direction := 'East'.! !
+
+!testRun: #MarsRoverTests #test01nullMovementDoesntAffectRover stamp: 'fs 5/16/2025 21:07:36'!
+PASSED!
+
+!testRun: #MarsRoverTests #test02MoveUpFacingNorth stamp: 'fs 5/16/2025 21:07:36'!
+PASSED!
+
+!testRun: #MarsRoverTests #test03MoveDownFacingNorth stamp: 'fs 5/16/2025 21:07:36'!
+PASSED!
+
+!testRun: #MarsRoverTests #test04MoveDownFacingNorth stamp: 'fs 5/16/2025 21:07:36'!
+PASSED!
+!MarsRoverTests methodsFor: 'testing' stamp: 'fs 5/16/2025 21:08:03'!
+test05MoveLeftFacingNorth         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover right.
+           self assert: (unRover itsPosition) equals: (0@0).
+           self assert: (unRover itsFacing) equals: 'East'. ! !
+!MarsRoverTests methodsFor: 'testing' stamp: 'fs 5/16/2025 21:08:13'!
+test04MoveRightFacingNorth         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover right.
+           self assert: (unRover itsPosition) equals: (0@0).
+           self assert: (unRover itsFacing) equals: 'East'. ! !
+
+!methodRemoval: MarsRoverTests #test04MoveDownFacingNorth stamp: 'fs 5/16/2025 21:08:13'!
+test04MoveDownFacingNorth         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover right.
+           self assert: (unRover itsPosition) equals: (0@0).
+           self assert: (unRover itsFacing) equals: 'East'. !
+!MarsRoverTests methodsFor: 'testing' stamp: 'fs 5/16/2025 21:08:57' prior: 50539674!
+test05MoveLeftFacingNorth         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover right.
+           self assert: (unRover itsPosition) equals: (0@0).
+           self assert: (unRover itsFacing) equals: 'West'. ! !
+!MarsRoverTests methodsFor: 'testing' stamp: 'fs 5/16/2025 21:09:28' prior: 50539710!
+test05MoveLeftFacingNorth         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover left.
+           self assert: (unRover itsPosition) equals: (0@0).
+           self assert: (unRover itsFacing) equals: 'West'. ! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 21:09:38'!
+left
+	self shouldBeImplemented.! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 21:09:52' prior: 50539734!
+left
+	direction := 'West'.! !
+
+!testRun: #MarsRoverTests #test01nullMovementDoesntAffectRover stamp: 'fs 5/16/2025 21:10:03'!
+PASSED!
+
+!testRun: #MarsRoverTests #test02MoveUpFacingNorth stamp: 'fs 5/16/2025 21:10:03'!
+PASSED!
+
+!testRun: #MarsRoverTests #test03MoveDownFacingNorth stamp: 'fs 5/16/2025 21:10:03'!
+PASSED!
+
+!testRun: #MarsRoverTests #test04MoveRightFacingNorth stamp: 'fs 5/16/2025 21:10:03'!
+PASSED!
+
+!testRun: #MarsRoverTests #test05MoveLeftFacingNorth stamp: 'fs 5/16/2025 21:10:03'!
+PASSED!
+!MarsRoverTests methodsFor: 'testing' stamp: 'fs 5/16/2025 21:11:59'!
+test04MoveRightFacingNorthDoesntChangePosition         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover right.
+           self assert: (unRover itsPosition) equals: (0@0).
+           self assert: (unRover itsFacing) equals: 'East'. ! !
+
+!methodRemoval: MarsRoverTests #test04MoveRightFacingNorth stamp: 'fs 5/16/2025 21:11:59'!
+test04MoveRightFacingNorth         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover right.
+           self assert: (unRover itsPosition) equals: (0@0).
+           self assert: (unRover itsFacing) equals: 'East'. !
+!MarsRoverTests methodsFor: 'testing' stamp: 'fs 5/16/2025 21:12:26'!
+test03MoveDownFacingNorthDoesntChangePosition         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover backward.
+           self assert: (unRover itsPosition) equals: (0@-1).
+           self assert: (unRover itsFacing) equals: 'North'. ! !
+
+!methodRemoval: MarsRoverTests #test03MoveDownFacingNorth stamp: 'fs 5/16/2025 21:12:26'!
+test03MoveDownFacingNorth         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover backward.
+           self assert: (unRover itsPosition) equals: (0@-1).
+           self assert: (unRover itsFacing) equals: 'North'. !
+!MarsRoverTests methodsFor: 'testing' stamp: 'fs 5/16/2025 21:12:52'!
+test03MoveDownFacingNorth         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover backward.
+           self assert: (unRover itsPosition) equals: (0@-1).
+           self assert: (unRover itsFacing) equals: 'North'. ! !
+
+!methodRemoval: MarsRoverTests #test03MoveDownFacingNorthDoesntChangePosition stamp: 'fs 5/16/2025 21:12:52'!
+test03MoveDownFacingNorthDoesntChangePosition         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover backward.
+           self assert: (unRover itsPosition) equals: (0@-1).
+           self assert: (unRover itsFacing) equals: 'North'. !
+!MarsRoverTests methodsFor: 'testing' stamp: 'fs 5/16/2025 21:13:00'!
+test05MoveLeftFacingNorthDoesntChangePosition         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover left.
+           self assert: (unRover itsPosition) equals: (0@0).
+           self assert: (unRover itsFacing) equals: 'West'. ! !
+
+!methodRemoval: MarsRoverTests #test05MoveLeftFacingNorth stamp: 'fs 5/16/2025 21:13:00'!
+test05MoveLeftFacingNorth         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover left.
+           self assert: (unRover itsPosition) equals: (0@0).
+           self assert: (unRover itsFacing) equals: 'West'. !
+!MarsRoverTests methodsFor: 'testing' stamp: 'fs 5/16/2025 21:18:09'!
+test06MovesDownFacingNorthThenTurningRight    
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover left.
+           self assert: (unRover itsPosition) equals: (0@0).
+           self assert: (unRover itsFacing) equals: 'West'. ! !
+!MarsRoverTests methodsFor: 'testing' stamp: 'fs 5/16/2025 21:19:33' prior: 50539839!
+test06MovesDownFacingNorthThenTurningRight    
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover backward.
+           unRover left.
+           self assert: (unRover itsPosition) equals: (0@0).
+           self assert: (unRover itsFacing) equals: 'West'. ! !
+!MarsRoverTests methodsFor: 'testing' stamp: 'fs 5/16/2025 21:20:12' prior: 50539851!
+test06MovesDownFacingNorthThenTurningRight    
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover backward.
+           unRover left.
+           self assert: (unRover itsPosition) equals: (0@-1).
+           self assert: (unRover itsFacing) equals: 'East'. ! !
+
+!testRun: #MarsRoverTests #test06MovesDownFacingNorthThenTurningRight stamp: 'fs 5/16/2025 21:20:27'!
+FAILURE!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 21:20:51' prior: 50539738!
+left
+	direction := 'West'.! !
+!MarsRoverTests methodsFor: 'testing' stamp: 'fs 5/16/2025 21:20:58' prior: 50539864!
+test06MovesDownFacingNorthThenTurningRight    
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover backward.
+           unRover left.
+           self assert: (unRover itsPosition) equals: (0@-1).
+           self assert: (unRover itsFacing) equals: 'West'. ! !
+
+!testRun: #MarsRoverTests #test06MovesDownFacingNorthThenTurningRight stamp: 'fs 5/16/2025 21:21:01'!
+PASSED!
+!MarsRoverTests methodsFor: 'testing' stamp: 'fs 5/16/2025 21:24:22'!
+test08MovesDownFacingNorthThenTurningRight    
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover backward.
+           unRover left.
+           self assert: (unRover itsPosition) equals: (0@-1).
+           self assert: (unRover itsFacing) equals: 'West'. ! !
+
+!methodRemoval: MarsRoverTests #test06MovesDownFacingNorthThenTurningRight stamp: 'fs 5/16/2025 21:24:22'!
+test06MovesDownFacingNorthThenTurningRight    
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover backward.
+           unRover left.
+           self assert: (unRover itsPosition) equals: (0@-1).
+           self assert: (unRover itsFacing) equals: 'West'. !
+!MarsRoverTests methodsFor: 'testing' stamp: 'fs 5/16/2025 21:24:29'!
+test07MoveLeftFacingNorthDoesntChangePosition         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover left.
+           self assert: (unRover itsPosition) equals: (0@0).
+           self assert: (unRover itsFacing) equals: 'West'. ! !
+
+!methodRemoval: MarsRoverTests #test05MoveLeftFacingNorthDoesntChangePosition stamp: 'fs 5/16/2025 21:24:29'!
+test05MoveLeftFacingNorthDoesntChangePosition         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover left.
+           self assert: (unRover itsPosition) equals: (0@0).
+           self assert: (unRover itsFacing) equals: 'West'. !
+!MarsRoverTests methodsFor: 'testing' stamp: 'fs 5/16/2025 21:24:37'!
+test06MoveRightFacingNorthDoesntChangePosition         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover right.
+           self assert: (unRover itsPosition) equals: (0@0).
+           self assert: (unRover itsFacing) equals: 'East'. ! !
+
+!methodRemoval: MarsRoverTests #test04MoveRightFacingNorthDoesntChangePosition stamp: 'fs 5/16/2025 21:24:38'!
+test04MoveRightFacingNorthDoesntChangePosition         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'North'.
+           unRover right.
+           self assert: (unRover itsPosition) equals: (0@0).
+           self assert: (unRover itsFacing) equals: 'East'. !
+!MarsRoverTests methodsFor: 'testing' stamp: 'fs 5/16/2025 21:27:43'!
+test04MoveLeftFacingEast         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'East'.
+           unRover backward.
+           self assert: (unRover itsPosition) equals: (-1@0).
+           self assert: (unRover itsFacing) equals: 'North'. ! !
+!MarsRoverTests methodsFor: 'testing' stamp: 'fs 5/16/2025 21:28:07'!
+test05MoveRightFacingEast         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'East'.
+           unRover forward.
+           self assert: (unRover itsPosition) equals: (1@0).
+           self assert: (unRover itsFacing) equals: 'North'. ! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 21:31:02' prior: 50539575!
+forward
+	(self itsFacing = 'North') ifTrue: [coordinate := coordinate + (0@1).]. 
+	(self itsFacing = 'East') ifTrue: [coordinate := coordinate + (0@1).].! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 21:31:25' prior: 50539995!
+forward
+	(self itsFacing = 'North') ifTrue: [coordinate := coordinate + (0@1).]. 
+	(self itsFacing = 'East') ifTrue: [coordinate := coordinate + (0@1).].
+	(self itsFacing = 'West') ifTrue: [coordinate := coordinate + (0@1).]! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 21:31:43' prior: 50540003!
+forward
+	(self itsFacing = 'North') ifTrue: [coordinate := coordinate + (0@1).]. 
+	(self itsFacing = 'East') ifTrue: [coordinate := coordinate + (0@1).].
+	(self itsFacing = 'West') ifTrue: [coordinate := coordinate + (0@1).].
+	 (self itsFacing = 'North') ifTrue: [coordinate := coordinate + (0@1).].! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 21:32:24' prior: 50540014!
+forward
+	(self itsFacing = 'North') ifTrue: [coordinate := coordinate + (0@1).]. 
+	(self itsFacing = 'East') ifTrue: [coordinate := coordinate + (1@0).].
+	(self itsFacing = 'West') ifTrue: [coordinate := coordinate + (-1@0).].
+	 (self itsFacing = 'South') ifTrue: [coordinate := coordinate + (0@-1).].! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 21:32:27' prior: 50540027!
+forward
+	(self itsFacing = 'North') ifTrue: [coordinate := coordinate + (0@1).]. 
+	(self itsFacing = 'East') ifTrue: [coordinate := coordinate + (1@0).].
+	(self itsFacing = 'West') ifTrue: [coordinate := coordinate + (-1@0).].
+	 (self itsFacing = 'South') ifTrue: [coordinate := coordinate + (0@-1).].! !
+
+!testRun: #MarsRoverTests #test05MoveRightFacingEast stamp: 'fs 5/16/2025 21:32:44'!
+FAILURE!
+!MarsRoverTests methodsFor: 'testing' stamp: 'fs 5/16/2025 21:32:55' prior: 50539983!
+test05MoveRightFacingEast         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'East'.
+           unRover forward.
+           self assert: (unRover itsPosition) equals: (1@0).
+           self assert: (unRover itsFacing) equals: 'East'. ! !
+
+!testRun: #MarsRoverTests #test05MoveRightFacingEast stamp: 'fs 5/16/2025 21:32:58'!
+PASSED!
+
+!testRun: #MarsRoverTests #test04MoveLeftFacingEast stamp: 'fs 5/16/2025 21:33:01'!
+FAILURE!
+
+!testRun: #MarsRoverTests #test04MoveLeftFacingEast stamp: 'fs 5/16/2025 21:33:01'!
+FAILURE!
+!MarsRoverTests methodsFor: 'testing' stamp: 'fs 5/16/2025 21:33:50' prior: 50539971!
+test04MoveLeftFacingEast         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'East'.
+           unRover backward.
+           self assert: (unRover itsPosition) equals: (1@0).
+           self assert: (unRover itsFacing) equals: 'East'. ! !
+
+!testRun: #MarsRoverTests #test04MoveLeftFacingEast stamp: 'fs 5/16/2025 21:33:54'!
+FAILURE!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'fs 5/16/2025 21:35:40' prior: 50539621!
+backward
+	(self itsFacing = 'North') ifTrue: [coordinate := coordinate + (0@-1).]. 
+	(self itsFacing = 'East') ifTrue: [coordinate := coordinate + (-1@0).].
+	(self itsFacing = 'West') ifTrue: [coordinate := coordinate + (1@0).].
+	 (self itsFacing = 'South') ifTrue: [coordinate := coordinate + (0@1).].! !
+!MarsRoverTests methodsFor: 'testing' stamp: 'fs 5/16/2025 21:36:10' prior: 50540065!
+test04MoveLeftFacingEast         
+           |unRover|
+           unRover := MarsRover withInitialCoordinates: (0@0) facing: 'East'.
+           unRover backward.
+           self assert: (unRover itsPosition) equals: (-1@0).
+           self assert: (unRover itsFacing) equals: 'East'. ! !
+
+!testRun: #MarsRoverTests #test01nullMovementDoesntAffectRover stamp: 'fs 5/16/2025 21:42:56'!
+PASSED!
+
+!testRun: #MarsRoverTests #test02MoveUpFacingNorth stamp: 'fs 5/16/2025 21:42:58'!
+PASSED!
+
+!testRun: #MarsRoverTests #test03MoveDownFacingNorth stamp: 'fs 5/16/2025 21:43:00'!
+PASSED!
+
+!testRun: #MarsRoverTests #test04MoveLeftFacingEast stamp: 'fs 5/16/2025 21:43:02'!
+PASSED!
+
+!testRun: #MarsRoverTests #test05MoveRightFacingEast stamp: 'fs 5/16/2025 21:43:03'!
+PASSED!
+
+!testRun: #MarsRoverTests #test06MoveRightFacingNorthDoesntChangePosition stamp: 'fs 5/16/2025 21:43:06'!
+PASSED!
+
+!testRun: #MarsRoverTests #test07MoveLeftFacingNorthDoesntChangePosition stamp: 'fs 5/16/2025 21:43:07'!
+PASSED!
+
+!testRun: #MarsRoverTests #test08MovesDownFacingNorthThenTurningRight stamp: 'fs 5/16/2025 21:43:09'!
+PASSED!
+
+----SNAPSHOT----(16 May 2025 21:47:33) CuisUniversity-6350.image priorSource: 6643839!
+
+----QUIT----(16 May 2025 21:47:54) CuisUniversity-6350.image priorSource: 6670431!
