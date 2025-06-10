@@ -1,0 +1,545 @@
+
+
+----STARTUP---- (6 May 2025 21:46:16) as C:\Users\usuario\Desktop\imagen prueba\windows64\windows64\CuisUniversity-6350.image!
+
+
+----End fileIn of C:\Users\usuario\Desktop\windows64\windows64-UserFiles\FileOuts\ISW-Parcial1-1C25.st----!
+
+----STARTUP---- (6 June 2025 14:37:07) as C:\Users\usuario\Desktop\imagen prueba\windows64\windows64\CuisUniversity-6350.image!
+
+
+----End fileIn of C:\Users\usuario\Downloads\Portfolio-Solucion.st----!
+
+Object subclass: #Reports
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #Reports category: #'Portfolio-Solucion' stamp: 'fs 6/6/2025 14:52:24'!
+Object subclass: #Reports
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+Object subclass: #Transference
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #Transference category: #'Portfolio-Solucion' stamp: 'fs 6/6/2025 14:55:21'!
+Object subclass: #Transference
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+!Transference methodsFor: 'as yet unclassified' stamp: 'fs 6/6/2025 15:20:10'!
+transferFrom: anAccount to: anotherAccount
+ ! !
+
+TestCase subclass: #TransferenceTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #TransferenceTest category: #'Portfolio-Solucion' stamp: 'fs 6/6/2025 15:29:05'!
+TestCase subclass: #TransferenceTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/6/2025 15:29:57'!
+test01TransferenceBetween2Accounts
+                        ! !
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/6/2025 15:30:40' prior: 50541160!
+test01TransferenceBetween2Accounts
+            |account1|          
+            account1 := ReceptiveAccount new.! !
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/6/2025 15:31:06' prior: 50541165!
+test01TransferenceBetween2Accounts
+            |account1 account2|          
+            account1 := ReceptiveAccount new.
+             account2 := ReceptiveAccount new.! !
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/6/2025 15:31:27' prior: 50541172!
+test01TransferenceBetween2Accounts
+            |account1 account2|          
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            ! !
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/6/2025 15:34:25' prior: 50541181!
+test01TransferenceBetween2Accounts
+            |account1 account2 deposit|          
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            deposit := Deposit register: 50 on: account1.
+            Transference new    ! !
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/6/2025 15:41:11' prior: 50541190!
+test01TransferenceBetween2Accounts
+            |account1 account2 deposit transf|          
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            deposit := Deposit register: 50 on: account1.
+            transf :=  Transference new transferFrom: account1 to: account2 theAmountOf: 30.  
+            self assert: 20 equals: account1 balance.! !
+!Transference methodsFor: 'as yet unclassified' stamp: 'fs 6/6/2025 15:42:30'!
+transferFrom: anAccount to: anotherAccount anAmount: anAmount 
+ ! !
+
+!methodRemoval: Transference #transferFrom:to: stamp: 'fs 6/6/2025 15:42:30'!
+transferFrom: anAccount to: anotherAccount
+ !
+!Transference methodsFor: 'as yet unclassified' stamp: 'fs 6/6/2025 15:43:10'!
+transferFrom: anAccount to: anotherAccount theAmountOf: anAmount 
+ ! !
+
+!methodRemoval: Transference #transferFrom:to:anAmount: stamp: 'fs 6/6/2025 15:43:10'!
+transferFrom: anAccount to: anotherAccount anAmount: anAmount 
+ !
+!Transference methodsFor: 'as yet unclassified' stamp: 'fs 6/6/2025 15:44:43' prior: 50541226!
+transferFrom: anAccount to: anotherAccount theAmountOf: anAmount 
+                    Withdraw register:anAmount on: anAccount. ! !
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/6/2025 15:45:54' prior: 50541202!
+test01TransferenceBetween2Accounts
+            |account1 account2 deposit transf|          
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            deposit := Deposit register: 50 on: account1.
+            transf :=  Transference new transferFrom: account1 to: account2 theAmountOf: 30.  
+            self assert: 20 equals: account1 balance.
+            self assert: 30 equals: account2 balance.! !
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/6/2025 15:48:40' prior: 50541243!
+test01TransferenceBetween2Accounts
+            |account1 account2 deposit transf|          
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            deposit := Deposit register: 50 on: account1.
+            transf :=  Transference new transferFrom: account1 to: account2 theAmountOf: 30.  
+            self assert: 20 equals: account1 balance.
+            self assert: 30 equals: account2 balance.
+             self assert: (OrderedCollection with: transf) equals: account1 test25ThereAreOnly2VersionsAfterRefactoringMethodWithTwoWriteReferences! !
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/6/2025 15:49:32' prior: 50541260!
+test01TransferenceBetween2Accounts
+            |account1 account2 deposit transf|          
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            deposit := Deposit register: 50 on: account1.
+            transf :=  Transference new transferFrom: account1 to: account2 theAmountOf: 30.  
+            self assert: 20 equals: account1 balance.
+            self assert: 30 equals: account2 balance.
+             self assert: (OrderedCollection with: transf) equals: account1 ! !
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/6/2025 15:50:30' prior: 50541282!
+test01TransferenceBetween2Accounts
+            |account1 account2 deposit transf|          
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            deposit := Deposit register: 50 on: account1.
+            transf :=  Transference new transferFrom: account1 to: account2 theAmountOf: 30.  
+            self assert: 20 equals: account1 balance.
+            self assert: 30 equals: account2 balance.! !
+
+!testRun: #TransferenceTest #test01TransferenceBetween2Accounts stamp: 'fs 6/6/2025 15:50:44'!
+FAILURE!
+
+!testRun: #TransferenceTest #test01TransferenceBetween2Accounts stamp: 'fs 6/6/2025 15:50:50'!
+FAILURE!
+
+!testRun: #TransferenceTest #test01TransferenceBetween2Accounts stamp: 'fs 6/6/2025 15:50:50'!
+FAILURE!
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/6/2025 15:53:50' prior: 50541302!
+test01TransferenceBetween2Accounts
+            |account1 account2 deposit transf|          
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            deposit := Deposit register: 50 on: account1.
+            transf :=  Transference new transferFrom: account1 to: account2 theAmountOf: 30.  
+            self assert: 20 equals: account1 balance.
+            self assert: 30 equals: account2 balance.! !
+!Transference methodsFor: 'as yet unclassified' stamp: 'fs 6/6/2025 16:00:07' prior: 50541236!
+transferFrom: anAccount to: anotherAccount theAmountOf: anAmount 
+                    Withdraw register:anAmount on: anAccount.
+                    Deposit register: anAmount on: anotherAccount.! !
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/6/2025 16:18:13'!
+test02TransferenceBetween2AccountsIsRegistered
+         "   |account1 account2 deposit transf|          
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            deposit := Deposit register: 50 on: account1.
+            transf :=  Transference new transferFrom: account1 to: account2 theAmountOf: 30.  
+            self assert: transf  equals: ".! !
+
+TestCase subclass: #ReportsTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #ReportsTest category: #'Portfolio-Solucion' stamp: 'fs 6/6/2025 16:20:48'!
+TestCase subclass: #ReportsTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+!ReportsTest methodsFor: 'tests' stamp: 'fs 6/6/2025 16:22:03'!
+test01ReportFromAnAccountWithoutTransferences
+                  ! !
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/6/2025 16:27:37' prior: 50541345!
+test02TransferenceBetween2AccountsIsRegistered
+            |account1 account2 deposit transf|          
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            deposit := Deposit register: 50 on: account1.
+            transf :=  Transference new transferFrom: account1 to: account2 theAmountOf: 30.  
+            self assert: transf  equals: account1.! !
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/6/2025 16:27:50' prior: 50541377!
+test02TransferenceBetween2AccountsIsRegistered
+            |account1 account2 deposit transf|          
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            deposit := Deposit register: 50 on: account1.
+            transf :=  Transference new transferFrom: account1 to: account2 theAmountOf: 30.  
+            self assert: transf  equals: account1 allTransferences.! !
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/6/2025 16:28:11' prior: 50541393!
+test02TransferenceBetween2AccountsIsRegistered
+            |account1 account2  transf|          
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            Deposit register: 50 on: account1.
+            transf :=  Transference new transferFrom: account1 to: account2 theAmountOf: 30.  
+            self assert: transf  equals: account1 allTransferences.! !
+!Transference methodsFor: 'as yet unclassified' stamp: 'fs 6/6/2025 16:29:45' prior: 50541336!
+transferFrom: anAccount to: anotherAccount theAmountOf: anAmount
+                    Withdraw register:anAmount on: anAccount.
+                    anAccount registerTransactionTo: anotherAccount forTheAmountOf: anAmount..
+                    Deposit register: anAmount on: anotherAccount.! !
+!ReceptiveAccount methodsFor: 'k' stamp: 'fs 6/6/2025 16:30:35'!
+registerTransactionTo: anotherAccount forTheAmountOf: anAmount 
+	self shouldBeImplemented.! !
+!ReceptiveAccount methodsFor: 'k' stamp: 'fs 6/6/2025 16:35:34' prior: 50541437!
+registerTransactionTo: anotherAccount forTheAmountOf: anAmount 
+                 ! !
+!Transference methodsFor: 'as yet unclassified' stamp: 'fs 6/6/2025 16:35:56' prior: 50541425!
+transferFrom: anAccount to: anotherAccount theAmountOf: anAmount
+                    Withdraw register:anAmount on: anAccount.
+                    anAccount registerTransaction: self.
+                    Deposit register: anAmount on: anotherAccount.! !
+!ReceptiveAccount methodsFor: 'k' stamp: 'fs 6/6/2025 16:36:26'!
+registerTransaction: aTransference 
+	self shouldBeImplemented.! !
+
+!classDefinition: #ReceptiveAccount category: #'Portfolio-Solucion' stamp: 'fs 6/6/2025 16:36:45'!
+Account subclass: #ReceptiveAccount
+	instanceVariableNames: 'transactions itsTransferences'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+!ReceptiveAccount methodsFor: 'k' stamp: 'fs 6/6/2025 16:36:42' prior: 50541459!
+registerTransaction: aTransference 
+	itsTransferences:= aTransference.! !
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/6/2025 16:43:33' prior: 50541409!
+test02TransferenceBetween2AccountsIsRegistered
+            |account1 account2  transf|          
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            Deposit register: 50 on: account1.
+            transf :=  Transference new transferFrom: account1 to: account2 theAmountOf: 30.  
+            self assert: (account1 isRegistered: transf).! !
+!Transference class methodsFor: 'as yet unclassified' stamp: 'fs 6/6/2025 16:44:58'!
+newTransference
+                 ^self new initializeTransferences.! !
+!Transference methodsFor: 'as yet unclassified' stamp: 'fs 6/6/2025 16:45:09'!
+initializeTransferences
+                       ! !
+
+Object subclass: #Transference
+	instanceVariableNames: 'itsTransferences'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #Transference category: #'Portfolio-Solucion' stamp: 'fs 6/6/2025 16:45:31'!
+Object subclass: #Transference
+	instanceVariableNames: 'itsTransferences'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+!Transference methodsFor: 'as yet unclassified' stamp: 'fs 6/6/2025 16:45:46' prior: 50541498!
+initializeTransferences
+                       itsTransferences := OrderedCollection new.! !
+
+!methodRemoval: ReceptiveAccount #registerTransactionTo:forTheAmountOf: stamp: 'fs 6/6/2025 16:46:19'!
+registerTransactionTo: anotherAccount forTheAmountOf: anAmount 
+                 !
+
+!methodRemoval: Transference class #newTransference stamp: 'fs 6/6/2025 16:46:59'!
+newTransference
+                 ^self new initializeTransferences.!
+
+!methodRemoval: Transference #initializeTransferences stamp: 'fs 6/6/2025 16:47:05'!
+initializeTransferences
+                       itsTransferences := OrderedCollection new.!
+
+Object subclass: #Transference
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #Transference category: #'Portfolio-Solucion' stamp: 'fs 6/6/2025 16:47:11'!
+Object subclass: #Transference
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+----SNAPSHOT----(6 June 2025 16:50:57) CuisUniversity-6350.image priorSource: 6643839!
+
+----QUIT----(6 June 2025 16:51:02) CuisUniversity-6350.image priorSource: 6716756!
+
+----STARTUP---- (8 June 2025 23:00:21) as C:\Users\usuario\Desktop\imagen prueba\windows64\windows64\CuisUniversity-6350.image!
+
+
+!classRemoval: #Reports stamp: 'fs 6/8/2025 23:00:50'!
+Object subclass: #Reports
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classRemoval: #ReportsTest stamp: 'fs 6/8/2025 23:00:56'!
+TestCase subclass: #ReportsTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+Object subclass: #Transference
+	instanceVariableNames: 'withdrawLeg depositLeg value'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #Transference category: #'Portfolio-Solucion' stamp: 'fs 6/8/2025 23:09:29'!
+Object subclass: #Transference
+	instanceVariableNames: 'withdrawLeg depositLeg value'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+!Transference class methodsFor: 'instance creation' stamp: 'fs 6/8/2025 23:10:40'!
+register: aValue from: anAccount to: anotherAccount
+                    ^self new ! !
+!Transference class methodsFor: 'instance creation' stamp: 'fs 6/8/2025 23:11:16' prior: 50541585!
+register: aValue from: anAccount to: anotherAccount
+                    ^self new transferFrom: anAccount to:anotherAccount  theAmountOf: aValue! !
+!Transference methodsFor: 'as yet unclassified' stamp: 'fs 6/8/2025 23:12:09' prior: 50541449!
+transferFrom: anAccount to: anotherAccount theAmountOf: anAmount
+                    withdrawLeg := Withdraw register:anAmount on: anAccount.
+                    anAccount registerTransaction: self.
+                    depositLeg := Deposit register: anAmount on: anotherAccount.! !
+!Transference methodsFor: 'as yet unclassified' stamp: 'fs 6/8/2025 23:12:35' prior: 50541599!
+transferFrom: anAccount to: anotherAccount theAmountOf: anAmount
+                    withdrawLeg := Withdraw register:anAmount on: anAccount.
+                    anAccount registerTransaction: self.
+                    depositLeg := Deposit register: anAmount on: anotherAccount.
+                    value := anAmount.! !
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/8/2025 23:15:01' prior: 50541319!
+test01TransferenceBetween2Accounts
+            |account1 account2 deposit transf|          
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            deposit := Deposit register: 50 on: account1.
+            transf :=  Transference register: 30 from: account1 to: account2 .  
+            self assert: 20 equals: account1 balance.
+            self assert: 30 equals: account2 balance.! !
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/8/2025 23:15:17' prior: 50541624!
+test01TransferenceBetween2Accounts
+            |account1 account2 |          
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            Deposit register: 50 on: account1.
+             Transference register: 30 from: account1 to: account2 .  
+            self assert: 20 equals: account1 balance.
+            self assert: 30 equals: account2 balance.! !
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/8/2025 23:30:00' prior: 50541478!
+test02TransferenceBetween2AccountsIsRegistered
+            |account1 account2  transf|          
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            Deposit register: 50 on: account1.
+            transf :=  Transference register: 30 from: account1 to: account2 .
+            self assert: (account1 isRegistered: transf).! !
+
+!classRenamed: #Transference as: #Transfer stamp: 'fs 6/8/2025 23:37:31'!
+Smalltalk renameClassNamed: #Transference as: #Transfer!
+!TransferenceTest methodsFor: 'as yet unclassified' stamp: 'fs 6/8/2025 23:37:31' prior: 50541657!
+test02TransferenceBetween2AccountsIsRegistered
+            |account1 account2  transf|          
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            Deposit register: 50 on: account1.
+            transf :=  Transfer register: 30 from: account1 to: account2 .
+            self assert: (account1 isRegistered: transf).! !
+!TransferenceTest methodsFor: 'as yet unclassified' stamp: 'fs 6/8/2025 23:37:31' prior: 50541641!
+test01TransferenceBetween2Accounts
+            |account1 account2 |          
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            Deposit register: 50 on: account1.
+             Transfer register: 30 from: account1 to: account2 .  
+            self assert: 20 equals: account1 balance.
+            self assert: 30 equals: account2 balance.! !
+
+Transfer subclass: #TransferDeposit
+	instanceVariableNames: 'transfer value'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+Transfer subclass: #TransferDeposit
+	instanceVariableNames: 'transfer'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #TransferDeposit category: #'Portfolio-Solucion' stamp: 'fs 6/8/2025 23:38:49'!
+Transfer subclass: #TransferDeposit
+	instanceVariableNames: 'transfer'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+Transfer subclass: #TransferWithdraw
+	instanceVariableNames: 'transfer'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #TransferWithdraw category: #'Portfolio-Solucion' stamp: 'fs 6/8/2025 23:39:14'!
+Transfer subclass: #TransferWithdraw
+	instanceVariableNames: 'transfer'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+!Transfer methodsFor: 'as yet unclassified' stamp: 'fs 6/8/2025 23:40:10' overrides: 16914075!
+value
+             ^value! !
+!Transfer methodsFor: 'as yet unclassified' stamp: 'fs 6/8/2025 23:40:23'!
+withdrawLeg
+             ^withdrawLeg ! !
+!Transfer methodsFor: 'as yet unclassified' stamp: 'fs 6/8/2025 23:40:37'!
+depositLeg
+             ^depositLeg ! !
+!TransferDeposit class methodsFor: 'as yet unclassified' stamp: 'fs 6/8/2025 23:42:54'!
+asPartOf: aTransfer
+         ^self new initializeTransfer! !
+!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'fs 6/8/2025 23:43:24'!
+initializeTransfer: aTransfer
+          transfer := aTransfer.! !
+!TransferDeposit class methodsFor: 'as yet unclassified' stamp: 'fs 6/8/2025 23:43:33' prior: 50541749!
+asPartOf: aTransfer
+         ^self new initializeTransfer: aTransfer.! !
+!TransferWithdraw class methodsFor: 'as yet unclassified' stamp: 'fs 6/8/2025 23:43:45'!
+asPartOf: aTransfer
+         ^self new initializeTransfer: aTransfer.! !
+!TransferWithdraw methodsFor: 'as yet unclassified' stamp: 'fs 6/8/2025 23:44:10'!
+initializeTransfer: aTransfer
+                 transfer := aTransfer ! !
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/8/2025 23:47:25' prior: 50541676!
+test02TransferenceBetween2AccountsIsRegistered
+            |account1 account2  transf|          
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            Deposit register: 50 on: account1.
+            transf :=  Transfer register: 30 from: account1 to: account2 .
+            self assert: (transf depositLeg) equals: account2.
+            self assert: (transf withdrawLeg) equals: account1. ! !
+!Transfer methodsFor: 'as yet unclassified' stamp: 'fs 6/8/2025 23:49:31' prior: 50541611!
+transferFrom: anAccount to: anotherAccount theAmountOf: anAmount
+                    Withdraw register:anAmount on: anAccount.
+                    anAccount registerTransaction: self.
+                    Deposit register: anAmount on: anotherAccount.
+                    value := anAmount.
+                    withdrawLeg := 'a'.
+                    "depositLeg :=."! !
+!Transfer methodsFor: 'as yet unclassified' stamp: 'fs 6/8/2025 23:50:38' prior: 50541793!
+transferFrom: anAccount to: anotherAccount theAmountOf: anAmount
+                    Withdraw register:anAmount on: anAccount.
+                    anAccount registerTransaction: self.
+                    Deposit register: anAmount on: anotherAccount.
+                    value := anAmount.
+                    withdrawLeg := TransferWithdraw asPartOf: self.
+                    depositLeg := TransferDeposit asPartOf: self.! !
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/8/2025 23:52:14' prior: 50541776!
+test02TransferenceBetween2AccountsIsRegistered
+            |account1 account2  transf|          
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            Deposit register: 50 on: account1.
+            transf :=  Transfer register: 30 from: account1 to: account2 .
+            self assert: (transf depositLeg) equals: transf .
+ ! !
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/8/2025 23:53:02' prior: 50541824!
+test02TransferenceBetween2AccountsIsRegistered
+            |account1 account2  transf|          
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            Deposit register: 50 on: account1.
+            transf :=  Transfer register: 30 from: account1 to: account2 .
+            self assert: (transf depositLeg transference) equals: transf .
+ ! !
+!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'fs 6/8/2025 23:53:15'!
+transference
+       ^transfer ! !
+!TransferWithdraw methodsFor: 'as yet unclassified' stamp: 'fs 6/8/2025 23:53:28'!
+transference
+       ^transfer ! !
+
+!testRun: #TransferenceTest #test01TransferenceBetween2Accounts stamp: 'fs 6/8/2025 23:54:01'!
+PASSED!
+
+!testRun: #TransferenceTest #test01TransferenceBetween2Accounts stamp: 'fs 6/8/2025 23:54:02'!
+PASSED!
+
+!testRun: #TransferenceTest #test02TransferenceBetween2AccountsIsRegistered stamp: 'fs 6/8/2025 23:54:02'!
+PASSED!
+
+----SNAPSHOT----(8 June 2025 23:54:06) CuisUniversity-6350.image priorSource: 6716844!
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/8/2025 23:54:31' prior: 50541839!
+test02TransferenceBetween2AccountsIsRegistered
+            |account1 account2  transf|          
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            Deposit register: 50 on: account1.
+            transf :=  Transfer register: 30 from: account1 to: account2 .
+            self assert: (transf depositLeg transference) equals: transf .
+             self assert: (transf withdrawLeg transference) equals: transf .! !
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/9/2025 00:03:05'!
+test03NavegationFromDepositLegToWithdrawLeg
+           ! !
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/9/2025 00:04:11' prior: 50541882!
+test03NavegationFromDepositLegToWithdrawLeg
+            |account1 account2|                  
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            Deposit register: 50 on: account1.
+            Transfer register: 30 from: account1 to: account2 .  ! !
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/9/2025 00:06:15' prior: 50541887!
+test03NavegationFromDepositLegToWithdrawLeg
+            |account1 account2 transf|                  
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            Deposit register: 50 on: account1.
+             transf := Transfer register: 30 from: account1 to: account2 .  
+             self assert: (transf depositLeg transference withdrawLeg) equals: transf withdrawLeg. ! !
+!TransferenceTest methodsFor: 'test' stamp: 'fs 6/9/2025 00:07:29'!
+test04NavegationFromDepositLegToWithdrawLeg
+            |account1 account2 transf|                  
+            account1 := ReceptiveAccount new.
+            account2 := ReceptiveAccount new.
+            Deposit register: 50 on: account1.
+             transf := Transfer register: 30 from: account1 to: account2 .  
+             self assert: (transf withdrawLeg transference depositLeg) equals: transf depositLeg. ! !
+
+----QUIT----(9 June 2025 00:12:51) CuisUniversity-6350.image priorSource: 6726753!
