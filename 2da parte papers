@@ -1,0 +1,12 @@
+(DISCLAIMER NO ESTAN EN ORDEN)
+FAIL FAST (Jim Shore): no hacer codigo que se consturye alrededor de errores en vez de enfrentarlos directamente, hay que hacer que falle lo antes posible 
+fail-fast fundamentals: usar assertions para que salte la excepcion, si es con alguna descripcion mejor, cuando hay comentarios o te dan ganas de comentar un metodo hay que reemplazar eso por un assertion,
+evitar assertions sobre un metodo especifico y hacerlo sobre como el sistema falla para ese metodo mejor.
+writing assertions: hay que escribirlos lo mas cerca posible del error mismo, usa una reglas del 'pulgar' basicamente si el sistema falla rapido solo no hace nada, caso contrario lo hace fallar rapido para 
+que salte la assertion.
+eliminate the debugger: el mensaje del assertion deberia eliminar el uso del debugger, basicamente tenes que evitar repetir la condicion del assert y dar la suficiente info para enteder cual es el error
+sin meterte al stack. No hace falta que sea user-friendly es para los programadores.
+Robust failure: no temer al hacer la excepcion por miedo al cliente, se puede ir a un punto medio entre evitar esto y crashear(nunca debe pasar), algo como reportar el error y seguir ejecutando otros 
+comandos o algun punto medio que le avise al programador de este error, pues se le escapo a su testing si le aparece a un usuario. Esto seria un global exception handler.
+Finalmente si estas trabajando con archivos externos o cosas asi hay que asegurarse de cerrarlos mas alla de la falla, meter un global exc handler y sacar los catch exception locales, junto con
+assertions es la esencia de esta tecnica de fail fast.
