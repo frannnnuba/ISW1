@@ -10,3 +10,23 @@ Robust failure: no temer al hacer la excepcion por miedo al cliente, se puede ir
 comandos o algun punto medio que le avise al programador de este error, pues se le escapo a su testing si le aparece a un usuario. Esto seria un global exception handler.
 Finalmente si estas trabajando con archivos externos o cosas asi hay que asegurarse de cerrarlos mas alla de la falla, meter un global exc handler y sacar los catch exception locales, junto con
 assertions es la esencia de esta tecnica de fail fast.
+
+PATTERN ABUSER(Mahesh Dohani): arranca diciendo que era un programador ineficiente y enfocado en que tenia una funcionalidad a agregar a un sistema y se trababa
+y no era bueno. Llega un compañero y le propone el Gang of Four design pattern book prometiendo ser la solucion de todo diseño y que los llevaria a "los 
+sistemas bien diseñados y reutilizabilidad.El pensaba que programar y diseñar son alguna especie de opuestos, y que con estos patrones dejo de programar para
+diseñar; lo que es mas se aprendio de memoria todos los patrones y los aplico en todo. 
+Llevo a que todos usen patrones y se agarro superioridad sobre los 'programadores', dice que la cantidad de patrones deberian ser una medida para la reusabilidad.
+Patron para aplicar patrones: 
+1 For the instance variables , State pattern
+2 For each method apply strategy pattern
+3 For a groupong of instances, apply the chain responsabilty pattern
+4 For a groupong of instances, apply the compsoite, iterator and visitor pattern.
+5 for clients of objets, apply observer pattern.
+6 for clients of objects, apply the proxy pattern 
+7 for each hierarchy of objects, apply facade pattern
+8 for legacgy objectes, apply adapter pattern
+9 for creating objects as part of a family, apply the abstract factory, builder, and factoey methods pattern
+10 for creating similiar objects, prototype pattern.
+Final: el aplicar patron tras patron hizo que sus sistemas no sean entendibles por otros, y a la hora de hacer cambios esto no es organico en el modelo,
+necesitando mas patrones para hacerlo. Se pregunta si despues de haber hecho todo esto realmente mejoro la reusabilidad, si aplicar el patron mejora la resolucion
+(y que siquiera implica mejor para esto). 
