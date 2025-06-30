@@ -30,3 +30,22 @@ Patron para aplicar patrones:
 Final: el aplicar patron tras patron hizo que sus sistemas no sean entendibles por otros, y a la hora de hacer cambios esto no es organico en el modelo,
 necesitando mas patrones para hacerlo. Se pregunta si despues de haber hecho todo esto realmente mejoro la reusabilidad, si aplicar el patron mejora la resolucion
 (y que siquiera implica mejor para esto). 
+
+Was computing dumbed down by the arrival of computer science in academia?(Alan Kay):
+Al principio piensa que no pues en los 60s todo se hacia en universidades pero pocas, luego se extendio a todas las universidades prometiendo en 4 años una
+carrera de grado, esto le hecha la culpa a los baby boomers y dice que se debe a que quieren ver a las universidades como mercados mas que lugares de investigacion.
+Dice que las universidades se dejan llevar por hacer 'vocacion entrenada' en vez de entendimiento academico, ademas de sucumbir a presiones del mercado en 
+base a necesitar cierta tecnologia y ser eso lo enseñado en vez de tener su propio criterio (las universidades) sobre que son 'ciencias de computar' y 
+'practicas ingenieriles para software'. Dice que cuando estuvo en universidades no veia que se enseñara como una ciencia y resalta que no hay ni perspectiva
+ni curiosidad intelectual.
+Dice que no se tiene en cuenta la parte de ciencia en ciencias de la computacion y que todos lo describen mas parecido a algo de ingenieria,
+Culpa a las universidades de 'atontar'(dumb down' las ciencias de la computacion cuando las universidades deberian ocuparse de no dejar que pase esto,
+y culpa al mercado de ser tonto al nivel 'Dunning-kruger' (efecto en el que alguien tiene mayor estima en su conocimiento de un tema del que realmente tiene) 
+y llevo esta ignorancia al publico en general, en especifico la educacion en todos sus niveles.
+ Dice que en los 60s se pensaba a la cs como una aspiracion y una pregunta, en vez de algo resuelto.
+Dice que en las ciencias se intenta modelar a traves de reglas (y matematica) un entendimiento del tema que permita teorizar mejor sobre el y mejorar
+su entendimiento general.
+Menciona que cs es la ciencia de los sistemas, todos los sistemas. Los algoritmos demas son una pequeña parte de computar, computar es entender, crear y 
+construir sistemas. Menciona que a veces la matematica necesaria no esta inventada para la cs, y que en parte de descubrirla se puede usar una computadora
+por eso puede pensarse que la computadora es 'meta' pues se puede usar para generar modelos de ella misma(Acordarse que en ingles es computer science)
+Dice que pudieron ser creativos con xerox porque porque pensaban en 'sistemas de procesos'.
