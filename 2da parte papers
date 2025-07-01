@@ -119,3 +119,12 @@ si cambio este proceso por aquel otro que es mas lento mejora la estabilidad? (R
 mil años y ya no es realista al dominio del problema, ni al reves).
 Foundations of a Software Engineering Discipline: vuelve a mencionar las dos competencias principales, osea expertos en aprender y expertos en manejar complejidad
 
+Lectura de patrones en  Design Patterns Smalltalk Companion 
+Decorator: agregar funcionalidad dinamicamente a un objeto sin necesidad de subclasificar.
+Un decorador se diferencia de un componente concreto del objeto decorado, en cambio este decorador es polimorfico pero no esencial al objeto, por lo tanto 
+no se nota diferencia para el usuario en si. La forma de reconocer una clase de decorator es que tiene una unica variable de instancia, que es del mismo tipo 
+del decorador, y el decorador delega su implementacion a esta variable de instancia agregando algo de funcionalidad mientras tanto.
+La clase actua como un wrapper, que no hace mucho mas que solamente declarar esta variable de instancia, pero es esta la que va a redefinir la gran mayoria de
+cosas y le permite al decorador redefinir y agregar comportamiento.
+Smalltalk combina la clase concreteComponent y component en su decorator. Esto puede dar problemas porque agregar funcionalidad en component agrega tambien 
+funcionalidad a los decoradores.
