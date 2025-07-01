@@ -49,3 +49,72 @@ Menciona que cs es la ciencia de los sistemas, todos los sistemas. Los algoritmo
 construir sistemas. Menciona que a veces la matematica necesaria no esta inventada para la cs, y que en parte de descubrirla se puede usar una computadora
 por eso puede pensarse que la computadora es 'meta' pues se puede usar para generar modelos de ella misma(Acordarse que en ingles es computer science)
 Dice que pudieron ser creativos con xerox porque porque pensaban en 'sistemas de procesos'.
+
+Modern Software Engineering(David Farley):
+El desarrollo de software es un proceso de descubrimiento y exploracion, por ello para ser buenos ingen de soft hay que ser buenos en aprender.
+Dice que hay que tomar en cierto modo el metodo cientifico para construir software, podemos avanzar en bases que limitan variables y nos permiten
+descartar malas ideas mas facilmente. Esto nos permite movernos en direcdcion a sistemas y codigos mas deterministicos, este enfoque pragmatico del
+metodo cientifico es lo que define como ingenieria.
+Ingenieria de software: es la aplicacion de una forma cientifica-empirica, de encontrar soluciones economicas y eficientes a problemas practicos de software.
+El abordaje ingenieril es importante por dos cosas: priemro el des de soft es siempre un descubrimiento, entonces para lo segundo que es ser economicos y 
+eficientes nuestra habilidad de aprender debe ser sustentable.
+Expertos en aprender: 
+1) iteracion 2) feedback 3) incrementabilidad 4) experimentacion 5) empirisismo 
+Seguir estos pasos nos lleva a construir software de manero evolutiva  incluso cuando las respuestas al sistema son todavia inciertas, lo cual lleva a..
+Expertos en manejar complejidad: 1) Modularidad 2) Cohesion 3) Discernir preocupaciones 4) Abstraccion 5) Acoplamiento debil
+Estas son las ideas para manejar software, y algunas ideas practicas que menciona son:
+1) Testeabilidad 2) Implementabilidad 3) Velocidad 4) Control de variables 5)entrega continua
+Se refiere a la ciencia como el canal para mejorar ideas buenas y no caer en malas ideas previas, y el aplicar estas esructuras conocimientos teorizaciones etc
+en problemas especificos es la ingeniera.
+En los 60 se definio por primera vez el software y al poco tiempo entro en crisis porque no escalaba tan rapido como el hardware, se plantearon las sig.
+observaciones ( brooks silver bullet) en esencia el software no crece lento es el hardware que crece rapido.
+Describe que el pensar a la ingenieria de software como planteaba antes implica un cambio de paradigma, y que deberia ser natural ver las ventajas del enfoque 
+propuesto.
+2 QUE ES LA INGENIERIA?
+Diferencia en principio la ingenieria de produccion de la de diseño, la primera es la que debe atacar situaciones concretas, fisicas y que deben adaptarse de mejor
+forma a un cierto contexto que en cierto modo lo define, la segunda en cambio se desenvuelve de estos problemas.
+Compara como para otras disciplinas el problema en eficiencia viene desde la produccion, todo lo que sea relativo a un diseño es rapido y no tan costoso como
+poner en marcha toda una linea de ensamblaje etc. en el desarrollo de software consideramos el desarrollo como gratis, pues para empezar la produccion no hay
+mas que 'presionar el boton' de empezar a construir, lo cual lo hace sumamente escalable. Pensar el desarrollo de software como produccion es un error 
+(pensar en casacada en vez de iterativo incremental).
+Ingenieria de diseño: nuestro campo permite los cambios de manera efectiva y sin mayores costos pues trabajamos con lo que sera el producto final (analogia
+puentes), el problema de crear se desprende de todo lo que es de produccion, y lo que se busca es poder llevar a nuestra profesion a una cierta clase de
+profesion tecnica, siendo necesario poder usar la ciencia para crear modelos, y no como un capricho o algo ajeno a la actividad y verlo como algo ajeno
+al desarrollo, pues buscar una precision matematica en estos casos no es totalmente necesario.
+Hablando de matematicas como ingenieria: primero habla de los metodos formales (codigo que tra una autovalidacion matematica) problema: ataca la productividad,
+no es facil de generar y al final termina empeorando el desarrollo; luego compara como las industrias aeroespaciales son pragmaticas y empiricas basadas en 
+modelos ayudados lo maximo posible por matematicas, pero imposibles de saber si son eficientes sin probar, luego lo relaciona al software diciendo
+que  nuestros dominios de problemas si son acotados pueden ser demostrados formalmente, pero al crecer las variables se vuelve necesario adoptar un enfoque 
+como el aeroespacial para crecer el software iterativamente.
+Vandenburg define a la ingenieria como 'las cosas que funcionan' haciendo alusion a las practicas que permiten un mejor desarrollo de software (bardea a la
+ingenieria academica que no facilita esto) y que un enfoque que no ayuda al descubrimiento y solo a la produccion no se debe considerar ingenieria de soft.
+Primer definicion de ing de soft: Habla de que Hamilton creaba software que no siempre podia testear (software para aeroespaciales) pero siempre intentaba 
+conseguir hacer fallar todo para aprender que causaba los errores y prevenirlo a futuro, esto es la ingenieria empirica en esencia, incluso si algunos errores 
+se le escapaban hasta su puesta en marcha.
+El otro principio importante para Hamilton era el de 'fallar seguramente' que significa que aunque haya errores igual se pueda tener progreso.
+Working definition: the application of an empirical, scientific approach to finding efficient,economic solutions to practical problems.
+Engineering != Code
+Capitulo 3 
+Fundamentos para ser ingenieria de software: para poder elegir un grupo de ideas practicas etc que se puedan considerar ing. de soft estas ideas deben ser 
+esenciales al desarrollo de soft y robustas al cambio.
+Industria de cambio? Plantea que la profesion no aprende y se enrozca en lo que parecen ser avances, plantea que muchas veces parece haber avance pero es una 
+consecuencia de donde corremos nuestro codigo mas que un avance de software en si (avanza el hardware lo que hace que parezca que avanza el soft), plantea que
+vivio solamente dos veces un cambio importante que fue cuando cambio de assembler a C y cuando empezo a usar OOP. Plantea que los cambios de paradigmas puedem
+llevar a estos incrementos buscados pero en un ritmo lento y no en el x10 buscado realmente, pero si puede darse el proceso inverso de decrementos en -x10
+pues crear nuevos softwares e incorporar nuevas ideas no solo les parece casi imposible, si no que no pueden desprenderse de viejas ideas por mas descartadas 
+que estas esten con el paso del tiempo.
+Medidas de performance: no tenemos a priori pareciera medidas de productividad ya sean de equipos de desarrolladores de soft(descarta velocidad o 
+cosas como largo del codigo producido). Por un estudio menciona que hay dos factores claves en equipos de desarrolladores mas exitosos (no explica causalidad
+solo estadisticas) y estos dos factores son la estibilidad y el rendimiento. Estas estadisticas dicen que si seguis practicas tenes continuous delivery y si
+se dividen en pequeños grupos se consigue el hig performance.
+Para medir la stability: la tasa con la que se introduce un error en el desarrollo, y la tasa con la que se sigue adelante luego de un error en el proceso.
+La medicion de estabilidad no da certezas sobre que se este construyendo lo correcto, pero si sobre si se esta construyendo correctamente y la calidad de
+lo que se construye.
+Para medir el rendimiento: plazo de entrega, y frecuencia. Cuanto tiempo lleva una idea ir de una linea de codigo del  estilo aca deberia ir esto a un coigo
+que efectivamente realiza lo que se desea, y cada cuanto se dan estos cambios. 
+Parece dejar ciertos huecos sobre que lo que se construye sea correcto, pero al menos sirve para demostrar lo que dijimos antesy tienen correlacion una con
+la otra, los equipos eficientes son estables y producen mas rapido software, y un feedback rapido mejora la estabilidad del software.
+Declara que la vara con la que  medir los cambios al software y los procesos  son la estibilidad y el rendimiento, (agregar esto afecta mi est o rendim? 
+si cambio este proceso por aquel otro que es mas lento mejora la estabilidad? (Recordar que se dan feedback entre si, no sirve algo estable pero que toma 
+mil años y ya no es realista al dominio del problema, ni al reves).
+Foundations of a Software Engineering Discipline: 
