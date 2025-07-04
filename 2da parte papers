@@ -128,3 +128,31 @@ La clase actua como un wrapper, que no hace mucho mas que solamente declarar est
 cosas y le permite al decorador redefinir y agregar comportamiento.
 Smalltalk combina la clase concreteComponent y component en su decorator. Esto puede dar problemas porque agregar funcionalidad en component agrega tambien 
 funcionalidad a los decoradores.
+
+Template Method
+Intent: definir la estructura de un algoritmo para una cierta operacion, dejando a las subclases redefinir algunos pasos del algoritmo sin cambiar su 
+estructura.
+Motivation: tener una clase abstracta que define los metodos que van a tener sus subclases y da las ideas generales, y luego estas subclases tienen que usar
+ese esqueleto como prototipo pero pueden definir el como implementan esos pasos. Da el ejemplo de una aplicacion que abre archivos (del tipo que sean) y 
+las subclases de la aplicacion se basan en que tipo de archivo abre y como lo trata; ademas estas clases redefinen el como cumplen con lo pedido.
+Aplicaciones: dar un invariante de un algoritmo,lograr abstracciones de modo que la clase abstracta tiene el 'que'  y las subclases el 'como', controlar
+las extensiones de las subclases y permitirlas solo donde queremos.
+Estructura: A)Clase abstracta: define el esqueleto del metodo B) Clase concreta: implementa las operaciones primitivas para ejecutar los pasos especificos
+del algoritmo.
+Complicaciones de implementacion: 1) manejo de que mensajes deben ser declarados por las subclases y cuales pueden ser reusados y asegurar que no se incumpla
+este manejo 2) minimizar las operaciones que una subclase debe redefinir 3) identificar con prefijos los mensajes que se deben redefinir de los que no
+
+Strategy
+Intent: definir una familia de algoritmos, encapsular c/u y hacerlos intercambiables de modo que quien lo use puede variar de algortimo.
+Motivation: si cada cliente tiene algoritmos para hacer lo que se pide puede ser costoso de mantenerlo, ademas un algoritmo puede ser efectivo para una instancia
+del problema y necesitar otro algoritmo del mismo tipo para otro problema, mantener esos algoritmos si no todos se usan, y mas si esto es algo esencial al cleinte.
+Para evitar esto podemos tener un pedido que llamara a esta familia de algoritmos y le indica cual de todos quiere usar.
+Aplicaciones: si hay muchos ifs te permite sacarlos subclasificando segun la estrategia, cuando clases relacionadas solo se diferencian en su comportamiento,
+variantes de algoritmos segun lo que se busque, ocultar complejidad al cliente.
+Estructura y usos: 1) Strategy: tiene una interfaz comun a todas sus subclases,  es al que referencia el contexto 2) Concrete strategy: usa un algoritmo 
+concreto con la interfaz de strategy 3) Context: tiene un ConcreteStrategy , se conecta aStrategy,y puede definir una interfaz para dejar a Strategy
+acceder a su info. Usos: romper texto en lineas, Collections de smalltalk (en cierto modo medio diluido)
+Consecuencias: familias de algoritmos, alternativa a subclasifcar, elimina ifs, eleccion de implmentacion, los clientes deben saber las diferencias entre 
+estrategias, puede pasarse mucha informacion y no necesitarse (quizas en lo absoluto), mayor cantidad de objetos, puede haber acoplamiento de datos
+entre contexto y estrategia si no se tiene cuidado, puede ser opcional la estrategia y que si el cliente quiere use un metodo por default.
+
