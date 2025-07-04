@@ -156,3 +156,9 @@ Consecuencias: familias de algoritmos, alternativa a subclasifcar, elimina ifs, 
 estrategias, puede pasarse mucha informacion y no necesitarse (quizas en lo absoluto), mayor cantidad de objetos, puede haber acoplamiento de datos
 entre contexto y estrategia si no se tiene cuidado, puede ser opcional la estrategia y que si el cliente quiere use un metodo por default.
 
+Facade
+Intent: dar una interfaz unica para un conjunto de interfaces de un subsistema.
+Motivation: dar una interfaz lo suficientemente generica para los clientes que no necesitan entrar en tan bajo nivel del subsistema.
+Estructura: solamente tiene la facade y abajo los subsistemas. 
+Usos conocidos: compilador de smalltalk.
+
