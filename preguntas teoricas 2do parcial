@@ -28,3 +28,13 @@ cientifico.
 Un proxy polimorfico conoce el protocolo del elemento que esta proxeando y es transparente al usuario, mientras que uno no polimorfico sabe responder un subconjunto de mensajes del protocolo y tiene 
 que redefinir el doesNotUnderstand: aMessage para que cuando el proxy no sepa responder el mensaje, se le envie dinamicamente al objeto que esta proxeando y conoce ese protocolo. Este intercambio
 genera cierta penalidad en rendimiento.
+
+7) Explique el dilema “Safety” vs “Transparency” del patrón Composite, y cuál es la postura de la materia en cuanto al mismo.
+A la hora de decidir en el patron composite quien maneja los 'hijos' se puede optar por transparencia (root Class hierarchy) o seguridad (Composite class) pero siempre va a haber un tradeoff en esta 
+eleccion(o eso era cuando se escribio el patron), con la primera el usuario puede hacer cosas sin sentido en las hojas pero trata todas las instancias de manera uniforma; en la segunda si hay errores
+el compilador los detecta pero se pierde la interfaz igual para leaf-recursive. La catedra prioriza la seguridad (los objetos saben responder lo que les corresponde) por eso estaria mal que en una
+estr de arboll a una hoja se le pida cosas como remove/add.
+
+8) David Farley dice que la ingeniería de software se diferencia de otras ingenierías ya que la producción en masa de nuestros diseños no resulta un gran problema.¿Por qué dice esto?
+Dice esto debido a que la ing de soft no es una ingenieria de produccion, esto es el mayor costo de nuestro campo no incurre en grandes producciones que tienen que ser eficientes y poco costosas,
+en cambio nuestro campo al desarrollar el soft ya lo esta produciendo y luego sera producido en cantidad, lo costoso es la abstraccion y comprension del problema y encontrar formas correctas de modelar.
