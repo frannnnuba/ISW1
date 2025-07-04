@@ -1,0 +1,30 @@
+1) ¿Qué métrica relaciona el personaje del artículo “Pattern Abuser” con la aplicación de patrones? Explique la métrica y justifique si sirve o no.
+El personaje del paper menciona que la calidad del software se puede medir segun cuantos patrones se pueden aplicar en el, y a mayor cantidad de patrones mejor sera el diseño de este.
+La metrica no sirve pues como el mismo menciona, los sistemas luego se volvian complicados de entender y extender/cambiar, no siendo una buena metrica en general.
+
+2)Explicar la diferencia entre las dos métricas que se proponen en el libro deModern Software Engineering para evaluar la efectividad de un equipo de software.
+Explique además las medidas que se rastrean para Throughput.
+Las metricas mencionadas en el libro evaluan dos cosas distintas: una evalua la estabilidad y la otra el rendimiento con que un equipo produce software; la estabilidad mira la tasa con la que se 
+introducen errores en el codigo y cuanto se tarda en superarlo, mientras que el rendimiento (Thoughput) mide cuanto tiempo tarda en desarrollarse una funcionalidad. La forma de restrear el rendimiento
+es ver cada cuanto son los plazos de entrega y la frecuencia para las nuevas funcionalidades.
+
+3)¿Qué dos patrones/mecanismos subyacen en toda solución modelada con un Visitor? Explique brevemente en qué parte se utiliza cada uno.
+Para las soluciones modeladas con visitor en el fondo siempre se esta hablando de: A) un double dispatch el cual le permite al subject darle la responsabilidad al visitor pasandose a si mismo como 
+parametro B) Method object:  el visitor en si es el M.O pues agrega una(o varias) funcionalidades sin necesidad de modificar las subclases de concrete subjects.
+
+4 Explicar la diferencia entre las dos métricas que se proponen en el libro de Modern Software Engineering para evaluar la efectividad de un equipo de software. 
+Explique además las medidas que se rastrean para Stability.
+Las metricas mencionadas en el libro evaluan dos cosas distintas: una evalua la estabilidad y la otra el rendimiento con que un equipo produce software; la estabilidad mira la tasa con la que se 
+introducen errores en el codigo y cuanto se tarda en superarlo, mientras que el rendimiento (Thoughput) mide cuanto tiempo tarda en desarrollarse una funcionalidad. La forma de restrear ela estabilidad
+es la tasa que se menciona antes; esto sin embargo no nos asegura que estemos construyendo lo correcto respecto a lo que se quiere resolver.
+
+5) Según Alan Kay, ¿Quiénes son responsables del "empobrecimiento" de la Cienciade la Computación y por qué.
+Alan Kay responsabiliza a varios factores pero sobre todo a dos: a las universidades (luego generaliza a educacion en general) y a el mercado. A la primera por quitar la parte cientifica de cs. de la 
+computacion y 'entontecerla', sucumbiendo a no enseñar desde un aspecto cientifico si no en demanda al mercado, el cual es victima de creerse mas capaz en estos temas de lo que realmente es.
+Tambien menciona en menor medida la falta de interes real de los alumnos en profundizar los temas y en prometer carreras de 4 años siendo esto algo poco realista si se quiere mantener el espiritu 
+cientifico.
+
+6) Cómo se diferencia en Smalltalk, a nivel implementación, un Proxy polimórfico de uno no polimórfico?
+Un proxy polimorfico conoce el protocolo del elemento que esta proxeando y es transparente al usuario, mientras que uno no polimorfico sabe responder un subconjunto de mensajes del protocolo y tiene 
+que redefinir el doesNotUnderstand: aMessage para que cuando el proxy no sepa responder el mensaje, se le envie dinamicamente al objeto que esta proxeando y conoce ese protocolo. Este intercambio
+genera cierta penalidad en rendimiento.
