@@ -1,0 +1,83 @@
+The early history of Smalltalk:
+Introduccion: arranca hablando de su 'Interim Dynabook', la cual es una notebook que integra todo lo que se buscaba en los 60 (al menos cuantitativamente)
+una pantalla de buena resolucion, iconos, dispositivos para interactuar, memoria y capacidad de computo razonables.Habla de que los lenguajes de prog parecen
+ser o bien un 'aglutinamiento de features' o 'cristalización de estilos' (smalltalk entraria en ese).
+La idea detras de Smalltalk sugiere venir de las Ideas de Platon (Idealizar conceptos), siendo que la representacion de objetos abstrae cosas no esenciales 
+y permite pensarlos como una concatenacion de 'computadoras' que cada una no es una instancia 'menor' que su sucesora, si no un sistema completo y complejo
+por si sola del que nos abstraemos la mayor parte del tiempo.
+I)60s-66 Early OOP:
+Se empezo con dos grandes escalas, la mayor la de ocultar los detalles de sistemas complejos, la menor mejor forma de asignacion.
+Al principio hay que ver la aceptacion tanto interna (casos aislados hasta gradualmente convertirse en una especie de creencia religiosa), y externa (la refutan
+y tildan de locura, con el tiempo la toman como propia).
+IMPORTANTE (LA INSPIRACION DE LA FUERZA AEREA): vio un sistema de transporte de informacion entra barracas de la fuerza aerea, no habían OS standards o sistemas
+de archivos en esos dias, entonces el que diseño el sistema lo dividio en 3 partes: la 3ra eran los datos,de tamaño y estilo no definidos. la segunda eran 
+procedimientos de como encontrar registros y campos a actualizar con la 3ra parte, y la 1ra era los punteros relativos a entradas esp. de la 2da parte.
+Esa feue su primer etapa de 'barely see it' luego hubo otras etapas de esto mismo pero en distintos escenarios, entendiendo el compilamiento y traduccion de 
+HLL (High Level Languages) y en otra etapa en simulacion para el servicio nacional.
+Sketchpad and Simula: de los primeros intentos de algo grafico, permitia encapsular el comportamiento en 'instance drawings' que eran producto de un 
+'master drawing', y el comportamiento se agregaba a traves de 'constraints'.
+Simula era un lenguaje procedural que trataba a procesos y actividades, mientras que en sketchpad eran llamados maestros e instancias.
+Simula fue lo que le termino de cerrar la idea de que la recursion no era necesariamente hacer cosas mas chicas y de menor poder computacional, si no en
+partes de igual poder computacional y no en unas pocas si no miles.
+II)67-69 Flex(primer intento de una comp personal de oop): maquina chiquita con max de palabra de 16 bits, tenia parecido con ciertas cosas pero se quedaba 
+atras en lo que a Sketchpad concierne.
+
+Logo estaba siendo usado en las escuelas para enseñar programacion a niños
+Pensar en las compus como servidores que consumen otros servidores a traves de una sintaxis que si no entiende el servidor entonces no hará nada.
+
+ES INLEIBLE ESTO
+Resumen de Claude(Tomar con pinzas y ser critico de cosas que pueda dejar por fuera)
+
+Resumen: "The Early History of Smalltalk" (Alan Kay)
+Idea central
+
+Smalltalk nace de una intuición filosófica: representar todo mediante un único tipo de "bloque de comportamiento" recursivo que oculta estado y proceso,
+comunicándose solo por mensajes — inspirado en los mónadas de Leibniz y en biología celular. Kay distingue entre lenguajes "aglutinación de características" 
+(creados por comités, ej. PL/I, Ada) y "cristalización de estilo" (creados por una sola persona, ej. LISP, APL, Smalltalk).
+
+I. 1960-66 — Ideas formativas
+Burroughs B220/B5000: primeras "visiones" tempranas de modularidad (interfaces procedurales a un módulo).
+Sketchpad (Ivan Sutherland, 1963): gráficos interactivos, "master drawings" e "instancias", constraints — influencia clave en la noción de objetos maestro/instancia.
+Simula (Dahl y Nygaard): el "big hit" definitivo. Kay descubrió que Simula asignaba estructuras muy similares a las instancias de Sketchpad ("activities" y "processes" = masters/instances). De ahí surge la pregunta que originó todo: ¿por qué no dividir la computadora en miles de "pequeñas computadoras" en vez de datos+procedimientos?
+Frase clave de Bob Barton (mentor en Utah): "el principio básico del diseño recursivo es hacer que las partes tengan el mismo poder que el todo".
+II. 1967-69 — La máquina FLEX (Universidad de Utah)
+Colaboración con Ed Cheadle. Se evaluaron JOSS y EULER (de Wirth) como base, luego se inspiraron en Simula.
+Doug Engelbart y NLS: le mostró "aumento del intelecto humano", hipertexto, ventanas múltiples — reforzó la idea de "computación personal".
+Vio a Gordon Moore y su predicción exponencial (Ley de Moore) con nuevo impacto: imaginó computadoras del tamaño de un escritorio.
+Simula influyó el manejo de objetos (descriptor con puntero al "master" y a instancias); tomó ideas de coroutines (Conway) para suspender/reanudar objetos.
+Visitó a Seymour Papert (LOGO, niños en Lexington): esto fue el golpe decisivo — la computadora personal no debía ser un "vehículo" sino un "medio dinámico personal", extendible a la niñez.
+Concibió el concepto del Dynabook (notebook computer) tras ver una pantalla plana en la Universidad de Illinois.
+Otras influencias: LISP (McCarthy — belleza y defectos de las "formas especiales"), CARL Hewitt (PLANNER), Pat Winston (redes semánticas), Butler Lampson (CAL-TSS, capability-based OS).
+III. 1970-72 — Xerox PARC: nace Smalltalk-71
+Bob Taylor arma el PARC; llegan Butler Lampson, Chuck Thacker, Peter Deutsch y otros.
+Nombre "Smalltalk": elegido deliberadamente humilde, en reacción a nombres pomposos tipo "Zeus" u "Odin".
+El lenguaje Smalltalk-71 combinó influencias de LISP, LOGO, PLANNER, Simula y el propio lenguaje FLEX.
+Apuesta clave: Ted Kaehler y Dan Ingalls retaron a Kay a definir "el lenguaje más poderoso del mundo" en una página de código — esto originó el primer intérprete Smalltalk, que Dan Ingalls implementó y logró correr en pocos días.
+Llega el hardware crucial: Interim Dynabook (luego "Alto"), construido por Chuck Thacker en unos tres meses.
+Se formó el Learning Research Group (LRG).
+Proyectos tempranos: ventanas superpuestas (con Diana Merry), bitblt, editor modeless (Larry Tesler - miniMOUSE), animaciones (Steve Purcell), música en tiempo real (Ted Kaehler), Smalltalk con niños (Adele Goldberg, con el enfoque de "cajas" y el "Joe Book").
+IV. Principios fundamentales de Smalltalk (formulados en esta etapa)
+Todo es un objeto.
+Los objetos se comunican mediante mensajes.
+Los objetos tienen su propia memoria.
+Cada objeto es instancia de una clase.
+La clase contiene el comportamiento compartido.
+Evaluar es pasar control al primer objeto, tratando el resto como mensaje.
+V. 1972-76 — Hacia Smalltalk-76
+Retiro "Let's Burn Our Disk Packs" (1975): tensión entre continuar con el Dynabook para niños vs. hacer un Smalltalk más potente para adultos.
+Dan Ingalls rediseña el lenguaje: elimina la dualidad función/clase, introduce sintaxis keyword/operador y bytecodes eficientes (hasta 100x más rápido).
+Herencia: Simula-67 la introdujo, pero Kay decidió dejarla fuera inicialmente en Smalltalk-72 (simulándola con la flexibilidad tipo LISP). Influencias de Larry Tesler (slot inheritance / delegación) y de Bobrow/Winograd (KRL, con "perspectives" tipo herencia múltiple).
+Proyecto NoteTaker: intento de laptop real, con "tabmouse" propio, corriendo Smalltalk-76 portado por Dan Ingalls sobre procesadores Intel 8086.
+Demo célebre a Steve Jobs y Jef Raskin (equipo de Apple/Lisa) en 1979: la escena histórica donde Dan Ingalls modifica el scroll en vivo, sorprendiendo a los visitantes.
+VI. 1976-80 — Smalltalk-80 (versión de lanzamiento)
+Adele Goldberg lidera la documentación y liberación pública del sistema.
+Se abandonan las fuentes personalizadas por caracteres ASCII estándar (decisión polémica pero clave para su adopción).
+Se introducen las metaclases — algo que Kay consideró innecesariamente confuso (citando a Peter Deutsch).
+Se publica en Byte Magazine (1981) y en libros de Goldberg/Robson, consolidando su difusión mundial.
+Reflexión final de Kay (Coda)
+
+Plantea el concepto de "late binding" (enlace tardío) como hilo conductor de todo el progreso en software — desde memoria RAM hasta recursión y objetos — y cuestiona por qué, décadas después, nadie propuso algo cualitativamente mejor que Smalltalk en simplicidad y poder.
+
+Colaboradores centrales mencionados repetidamente: Dan Ingalls (implementador/diseñador clave), Adele Goldberg (pedagogía y documentación), Ted Kaehler, Dave Robson, Diana Merry, Larry Tesler, Butler Lampson, Chuck Thacker, Peter Deutsch.
+
+Lenguajes/sistemas que más influyeron a Kay, en orden de impacto: Simula (el más determinante), Sketchpad, LISP, LOGO, PLANNER, Burroughs B5000, NLS de Engelbart, EULER, JOSS.
