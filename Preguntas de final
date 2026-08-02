@@ -1,0 +1,24 @@
+1.Como era el sistema de archivos usados en la fuerza aerea estadounidense y que fue una de las influencias de Smalltalk
+El sistema de archivos usado por la fuerza aerea estadounidense constaba en tomar archivos que tenian que ser pasados de un edificio a otro y dividirlo en 3 partes,
+la ultima parte eran los datos en si (el archivo), la segunda eran procedimientos para acceder a campos y registros en los que se guardarian los datos/modificarian, 
+la primera era punteros relativos que apuntaban a entradas a usar en la 2da parte. Influenciaron a Smalltalk respecto de pensar en la subdivision no como algo mas 
+pequeño y simple si no como partes de igual poder computacional/expresion.
+
+2. Resuma la tesis principal de Peter Naur de su paper Programming as theory Building.
+La tesis de Naur se basa en la idea de que programar no es solo escribir y editar codigo, si no una tarea mucho mas dificil que requiere de un entendimiento profundo
+de lo que se esta tratando de 'programar', el como es en el mundo real y como esto se traduce a una serie de pasos computacionales.
+Naur pone un foco fuerte en el programador al ser no solo quien crea la teoria (solo o en grupo) si no que también es quien puede explicarla, defenderla y modificarla
+si llegase a eso, discutiendo argumentos de porque programar no se basa en seguir solo metodos o leer/confeccionar ocumentación.
+En esta discusión aparece el concepto de vida muerte y resurrección de software el cual es extenso pero nuevamente pone en foco al programador sobre cualquier codigo 
+legacy con su documentación; lo que es mas, Naur discute que el programador debe ser tratado con el respeto inherente que tiene su profesion y no ser descartado como
+un simple confeccionador de codigo, dado que en él(programador) reside la tesis que es el corazón del software, explicando porque los metodos que sirven en otras
+disciplinas no necesariamente se traducen a buenos metodos en programación, siendo la mejor opción siempre apostar por practicas que mejoren al programador y no que
+traten de sacarlo de foco.
+
+3. A Que de refiere Brooks sobre la característica esencial del software de “Complexity”, que técnica en la materia vimos para tratarla ?
+La caracteristica de Complexity refiere a la exponencialidad de elementos en el diseño de software y como estos elementos o componentes se interrelacionan, no 
+pudiendo descartar la complejidad de estas conexiones o abstraerse de la complejidad que generan puesto que, al contrario que en otras disciplinas donde ciertas 
+consideraciones que eliminan complejidades llevan a avances grandes, la esencia del diseño de software no puede abstraerse de estas complejidades dado que su esencia
+yace en ellas.La tecnica vista en la materia es TDD, la cual permite empezar desde sistemas sencillos y que se basan en reparar fallos de manera controlada, sin tener
+que abarcar todo el sistema y sus interrelaciones desde un principio, significando una mejora importante en el approach del problema y facilitando el feedback inmediato
+
