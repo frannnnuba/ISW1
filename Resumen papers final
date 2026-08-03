@@ -81,3 +81,37 @@ Plantea el concepto de "late binding" (enlace tardío) como hilo conductor de to
 Colaboradores centrales mencionados repetidamente: Dan Ingalls (implementador/diseñador clave), Adele Goldberg (pedagogía y documentación), Ted Kaehler, Dave Robson, Diana Merry, Larry Tesler, Butler Lampson, Chuck Thacker, Peter Deutsch.
 
 Lenguajes/sistemas que más influyeron a Kay, en orden de impacto: Simula (el más determinante), Sketchpad, LISP, LOGO, PLANNER, Burroughs B5000, NLS de Engelbart, EULER, JOSS.
+
+
+What is Software Design by  Jack W. Reeves
+
+Empieza hablando de un bum en la adaptacion al uso de OO technics y en especial c++. Para hablar de xq c++ ayuda a mejorar el diseño de soft(aparentemente), primero
+explica que para entenderlo hay que saber que el software no se construye,se diseña.
+Menciona que en la busqueda de paralelismos con otras ingenierias, se pasa por alto el hecho de que en otras hay un equipo de diseño y uno de produccion y la documentacion
+es la forma en que interactuan, osea, los diseñadores solo confeccionan documentos sobre como construir cosas, y en ing de software eso no es asi.
+Una consecuencia directa de ver el codigo como software design es que 'construir' es relativamente barato, dado que en esta vision construir seria compilar y correr
+el codigo y la facilidad de la creacion desde un punto de vista 'mecanico': solo es tipear y tener una maquina (no habla de crear sistemas en si acá).
+Menciona la complejidad inherente de los sistemas de software y como son inherentes a cambiar.Vuelva a decir que el hardware no es comparable dado las naturalezas de
+problemas que enfrentan y que el software esta libre del costo de produccion lo que permite muchas instituciones y empresas.
+Menciona como se critica al software design como indisciplinado, cuando en realidad esta en su naturaleza cambiar constantemente incluso durantes fases en las que se
+esta ejecutando, haciendo al soft design un ejercicio de 'manejar complejidad'.
+Otras ingenierias deben probar de toda manera posible sus diseños antes de producirlos, en el soft design visto como codigo no existe esto al menos desde la 
+perspectiva de las otras ingenieras dado que consiste en testear y debuggear, lo cual es barato y es parte inherente del ciclo de diseño.Lo que es mas, como el costo
+de construir es practicamente nulo, es mas barato simplemente construir y testear que gastar tiempo y recursos buscando pruebas de correctitud.
+Habla de que el gran problema del diseño de software (codear) esta englobado en la fase de diseño (codear,testear,debuggear) mientras que el costo de produccion es
+casi nulo y lo que es peor, no se puede modularizar, todo se interconecta y un error de diseño afecta a todo el sistema.
+En un ideal todo se podria descomponer en capas y cada diseñador solo preocuparse por lo que concierne a esa capa, pero en realidad esperar a testear al final todo
+es una mala practica dado que un error arrastrado llevara indudablemente a un mal diseño
+Comenta que es necesario buenos diseños en todas las capas pero sobre todo en las superiores, es por esto que herramientas que ayuden a planificar son bienvenidas
+pero no deben tomarse como mas que nociones dado que una vez que se codee la solución, se derivará de esas herramientas pero en el mejor de los casos sera parecida a
+estas, siendo que refinar es parte del diseño.Sugiere que las especificaciones sean mas detalladas para niveles inferior y no tratar de traducir las esp de niveles
+superiores ya que solo deben ser guias al momento de pasarlas a codigo, dado que se deben ajustar a las capas inferiores.
+Habla de que es necesaria una notacion para todas las etapas de diseño. Aca'es donde sugiere c++ que permite describir cosas de mas alto nivel en el diseño
+Cuando nuevos lenguajes mas expresivos aparezcan seran adoptados, también es bueno que se adopten nuevas metodologias que impulsen al diseño (codear) mas rapido,lo 
+que lleva a que aquellos que diseñaron el sistema sea mucho mas probable que esten presentes cuando se codifique los niveles mas altos
+Argumenta que dentro de lo razonable se puede hacer dos documentaciones extra:
+Documentar info importante del problema que por alguna razon no esta en el diseño pero llevo a el.
+Documentar las cosas que es dificil de extraer del mismo diseño 
+Argumentos en contra: 
+A)Si el codigo fuente es diseño, entonces los programadores son diseñadores y claramente eso no es asi: le discuten esto basado en asumir la contra (no es diseño) y
+por lo tanto lo que dice esta mal. Vale lo mismo para el, pero el afirmo y nunca probo, lo dejo como tarea para el lector y se centro en los beneficios.
