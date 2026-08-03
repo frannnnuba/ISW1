@@ -22,3 +22,69 @@ consideraciones que eliminan complejidades llevan a avances grandes, la esencia 
 yace en ellas.La tecnica vista en la materia es TDD, la cual permite empezar desde sistemas sencillos y que se basan en reparar fallos de manera controlada, sin tener
 que abarcar todo el sistema y sus interrelaciones desde un principio, significando una mejora importante en el approach del problema y facilitando el feedback inmediato
 
+1. Explicar invisibility. Dar un ejemplo concreto
+Invisibility: es una complejidad inherente del codigo,que se explica viendo en otras disciplinas como el uso de graficos/representaciones pueden facilitar
+la comprensión,avance y explicacion de sistema complejos (como en fisica diagramas o en matematica graficas) mientras que en el software los sistemas tienen
+una interrelacion de elementos complejas y extensas de las que no nos podemos abstraer dado que son la esenciia misma del problema,y por lo tanto intentar 
+graficarlas de algún modo suele ser dificil y poco didactico, como lo han intentado ser diagramas de estilo 'grafos'.
+Ejemplo: un sistema operativo, el cual debería ser representado en su totalidad, dificilmente sería comprensible y facil de producir, aportando poco a quien
+lo vea dado la cantidad de componentes y complejidad que manejan estos sistemas.
+
+2. Explicar como funcionaba, para que servia Sketchpad y como influencio al desarrollo de Smalltalk
+Sketchpad era un sistema que influencio a Smalltalk a traves de sus 3 ideas base: graficos interactivos modernos, la cración de 'instance' drawings a 
+partir de master drawings, y la interaccion que se daba con constraints sobre los masters drawings. Claramente esto influencio junto a Simula al diseño
+de Smalltalk al ver repetidamente estos conceptos de recursion no en cosas mas pequeñas y menos potentes computacionalmente (como estructuras de datos) si
+no en 'pequeñas computadoras' con mismo poder computacional.
+
+3. Resumir la tesis de Reeves de What is software design
+What is Software design explica el repentino fenomeno del porque de la adopción de tecnicas orientadas a objetos en los 90s, sobre todo la adopción de c++ 
+como lenguaje de programación. Para entenderlo primero explica como se diferencian el diseño de software del diseño de otras ingenieras, siendo su principal
+enfoque (el cuál no demuestra, si no que explica sus beneficios,siendo esta una de las criticas que recibiria luego de publicar) que el diseño de software
+consiste en escribir el codigo,testearlo y debuggearlo mientras que el 'buildeo' es simplemente la compilación y ejecución: es esta la principal diferencia
+con otras ingenierias en las que el desarrollo de software el diseño es el codigo, mientras que en las otras el diseño y el 'buildeo' suelen ser etapas bien
+distinguidas y ejecutadas por distintos equipos.La correctitud de programas, al contrario que en otras ingenieriass, no produce beneficios claros, es por 
+esto que la necesidad de nuestra ingenieria consiste en reducir costos de diseños y no de producción, haciendo que los diseñadores se mantengan lo 
+max posible en el proyecto hasta depurar capas superiores, evitando enfoques cascadas y buscando mejores metodos de diseño; es allí que aparecen las
+tecnicas relacionadas con OOP y C++ que es un lenguaje que permitia especificar con suficiente detalle tecnico e implementativo.
+
+1) Cómo influenciaron simula y sketchpad a smalltalk.
+Sketchpad presento a Kay las ideas de subdividir en objetos que obedecian a ser instancias de objetos 'maestros', los cuales se manejaban a partir de
+constraints sobre el maestro (además de que Sketchpad presento el sistema grafico moderno e interactivo). Simula era un lenguaje procedural que se asemejaba
+a los objetos descritos en Sketchpad pero mas flexible, lo cual inspiro a Alan Kay profundamente y sus raices para diseñar Smalltalk se basaron en ideas de 
+Simula, entendiendo con estas dos ideas que veia un concepto generalizado mas grande que era el de la recursión no como subdividiri en partes mas pequeñas y 
+de menor poder computacional si no de subdivision en 'pequeñas computadoras' que tenian igual poder computacional.
+
+2) Paralelismos y diferencias entre lisp y smalltalk. Que cosas no eran funciones en lisp (quotes, condicionales, lambdas,…) (Hablar del lazy evaluation)
+Que hace smalltalk para que todo sea un objeto?
+Lisp era un lenguaje mas basado en el paradigma funcional, pero en esto se contradecia al tener expresionaes que no eran funciones (lambdas,conds,quotes),
+esto llevo a Alan Kay a pensar en porque no simplemente hacer que en vez de que todo fueran funciones porque no hacer que pudieran ser funciones que 
+pudieran ser aplicadas cuando las condiciones de quien recibia fueran las indicadas; esto llevo a Kay a pensar que la falla de LISP (y que trataria de no
+cometer con Smalltalk luego) fue la falta de construir lo mas complicado del sistema en principio y derivar las cosas menos significativas a partir de ese
+objeto grande y de aquí nace la clave para que todo en Smalltalk sean objetos y esto es su metamodelo (basao en las premisas de lo que debería ser un 
+lenguaje OOP) en el que todo se hereda de la clase objeto, y dependiendo el año del metamodelo que hablemos, puede incluir a las clases Behaviour y demas
+lo que lleva a un metamodelo donde la clase Objeto termina 'heredando de si misma' y esta bien definido.
+
+3) Hablar del meta modelo de smalltalk-80 y diferencias con el de smalltalk-76 (lo que el cuenta en la teórica). Que opinaba kay? 
+El metamodelo de Smalltalk 76 era mucho mas simple y solo consideraba a las instancias como instancias de su clase (que definian su comportamiento), esta 
+era a su vez instancias de la clase Class y ambas subclases de objetos, Class es instancia de si misma y define los metodos de su instancia.
+El metamodelo era mucho mas extenso y con mayor metaprogramacion resultado de este, dado que no solo teniamos ahora a la clase Class y a Objeto si no que
+también tenemos la clase objeto que es instancia de Metaclass, la cual es subclase de Behaviour que a su vez hereda de Object. 
+Kay opinaba que este enfoque era mucho mas confuso y no estaba muy de acuerdo,  junto con la adopcion de ascii y otros motivos fue que decidio tomarse un
+año sabatico del proyecto.
+
+4) A que se refiere Brooks con la conformidad y que podemos hacer para reducir esta dificultad.
+La complejidad de conformidad descrita por Brooks es aquella en la que el software se ve limitado a conformarse por ser el mas reciente o por ser lo mas 
+ajustado posible dado que debe conformarse a estructura del mundo real.
+Para reducir esta dificultad contamos con herramientas como refactoring (para cuando cambian las interfaces externas que limitan a nuestro software y debemos
+adaptar el software existente a estas), patrones de diseño que ayuden a manejar algunas de esas interfaces (como proxys,strategy,adapter etc) y en menor 
+medida el paradigma OOP es el que hace que podamos en cierto modo abstraernos de esas representaciones externas pero solo hasta cierto punto. 
+
+5)A que se refiere Brooks sobre la característica esencial del software de "Changeability" (cambio).¿Qué técnicas vimos en la materia que atacan esta car?
+La Changeability que explica Brooks es  basicamente como en otras disciplinas los cambios no suelen ser constantes ni parte de su naturaleza inherente y 
+como a veces es mejor en esas disciplinas el directamente tirar abajo y construir algo nuevo; sin embargo en el desarrollo de software esto no es así dado 
+que como estamos mapeando aspectos del mundo real a representaciones en codigo, es tan probable que estas cambien como su contraparte en el mundo real.
+El querer preparar el codigo de antemano no siempre es beneficioso pues se puede estar gastando tiempo y recursos para preparar un escenario futuro que en 
+el peor de los casos nunca llega a pasar, o no como lo esperabamos.
+La tecnica que vimos en la materia para abordar este dificultad consiste en el desarrollo de sistemas con TDD, haciendo que agregar tests que desarrollan
+estos cambios (ya sea agregar features,cambiar existentes o eliminarlos) no rompa todo el sistema 'en silencio' si no que permita evidenciar donde hay que
+trabajar y con los beneficios usuales de hacerlo con approach tdd.
